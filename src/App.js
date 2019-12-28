@@ -102,19 +102,21 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>{this.state.currentQuestionId === 1 ? "GORS" : "????"}</h1>
-            <img src={tausta} alt="TAUSTA"/>
-          <span style={{flexDirection: "row", marginBottom: 20}}>
-              <span>{question.question}</span>
-          </span>
-          <span>
+            <img src={tausta} alt="TAUSTA" className="background-image"/>
+            <div className="app-content">
+                <h1 className="title">{this.state.currentQuestionId === 1 ? "GORS" : "????"}</h1>
+                <span style={{flexDirection: "row", marginBottom: 20}}>
+                    <h3 className="question">{question.question}</h3>
+                </span>
+                <span>
             <span
                 onClick={this.yes}
-                style={{...styles.answer, color: "lightgreen"}}>KYLLÄ</span>
+                style={{...styles.answer, color: "lightgreen", zIndex: 5}}>KYLLÄ</span>
             <span
                 onClick={this.no}
                 style={{...styles.answer, color: "red"}}>EI</span>
           </span>
+            </div>
         </header>
       </div>
     );
