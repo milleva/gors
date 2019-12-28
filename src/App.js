@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import tausta from "./tausta.png"
+
 import './App.css';
 
 class App extends Component {
@@ -101,6 +103,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>{this.state.currentQuestionId === 1 ? "GORS" : "????"}</h1>
+            <img src={tausta} alt="TAUSTA"/>
           <span style={{flexDirection: "row", marginBottom: 20}}>
               <span>{question.question}</span>
           </span>
