@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import saltSackImage from "./gors_salt_sack.JPG"
 import backgroundImage from "./gors_bg.jpeg"
+import questions from "./questions"
 
 import './App.css';
 
@@ -11,93 +12,7 @@ class App extends Component {
         this.state = {
             startScreenIndex: 1,
             gameStarted: false,
-            currentQuestionId: 1,
-            questions: [
-                {
-                    id: 1,
-                    question: "ENTER THE WORLD",
-                    yes: 2,
-                    no: 2,
-                    yesText: "YES",
-                    noText: "WOHOO"
-                },
-                {
-                    id: 2,
-                    question: "Go look for answers",
-                    yes: 3,
-                    no: null,
-                    yesText: "LEFT",
-                    noText: "RIGHT"
-                },
-                {
-                    id: 3,
-                    yes: 4,
-                    no: 8,
-                    yesText: "Check the forest",
-                    noText: "Look into the fountain"
-                },
-                {
-                    id: 4,
-                    question: "THUNDER STRIKES",
-                    yes: 5,
-                    no: 5,
-                    yesText: "Run to safety",
-                    noText: "Embrace the thunder"
-                },
-                {
-                    id: 5,
-                    question: "HUNGER STRIKES",
-                    yes: 6,
-                    no: null,
-                    yesText: "Eat the frog",
-                    noText: "Keep on looking"
-                },
-                {
-                    id: 6,
-                    yes: 7,
-                    no: null,
-                    yesText: "Help Thalamis",
-                    noText: "Search the saltbag from iglu"
-                },
-                {
-                    id: 7,
-                    question: "YOU FOUND AN ENDING\n" +
-                    "White blids: x,\n" +
-                    "lost and found: route, frogfriend, empowerement, poison, kombo = gloves + fungi",
-                    yes: 1,
-                    no: 1,
-                    yesText: "OK"
-                },
-                
-                {
-                    id: 8,
-                    question: "You found an ancient terasure but you need a key to open it",
-                    yes: 9
-                },
-                {
-                    id: 9,
-                    yes: 10,
-                    no: null,
-                    yesText: "JUMPS AND TURNS",
-                    noText: "SWING AND FLY"
-                },
-                {
-                    id: 10,
-                    yes: 11,
-                    no: null,
-                    yesText: "VENTURE THE ENDLESS DESERT",
-                    noText: "STICK TOGETHER"
-                },
-                {
-                    id: 11,
-                    question: "YOU FOUND AN ENDING\n" +
-                    "White blids: x,\n" +
-                    "lost and found: route, hyper vision, rolling spin, body care, separation",
-                    yes: 1,
-                    no: 1,
-                    yesText: "OK"
-                }
-            ]
+            currentQuestionId: 1
         }
     }
     
@@ -139,21 +54,21 @@ class App extends Component {
     }
     
     yes = () => {
-        const question = this.state.questions.filter(q => q.id === this.state.currentQuestionId)[0]
+        const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
         if(question.yes){
-            this.setState({currentQuestionId: this.state.questions.map(q => q.id).filter(id => id === question.yes)[0]})
+            this.setState({currentQuestionId: questions.map(q => q.id).filter(id => id === question.yes)[0]})
         }
     }
     no = () => {
-        const question = this.state.questions.filter(q => q.id === this.state.currentQuestionId)[0]
+        const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
         if(question.no){
-            this.setState({currentQuestionId: this.state.questions.map(q => q.id).filter(id => id === question.no)[0]})
+            this.setState({currentQuestionId: questions.map(q => q.id).filter(id => id === question.no)[0]})
         }
     }
     
     
     render() {
-        const question = this.state.questions.filter(q => q.id === this.state.currentQuestionId)[0]
+        const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
         if(question && !question.yesText) {
             setTimeout(() => this.yes(), 5000);
         }
