@@ -20,7 +20,9 @@ class App extends Component {
                     id: 1,
                     question: "Haluatko lukea kirjaa, joka kertoo jostain, mikä ei kiinnosta sinua yhtään?",
                     yes: 2,
-                    no: 3
+                    no: 3,
+                    yesText: "Kyl vitus",
+                    noText: "Ei vitus"
                 },
                 {
                     id: 2,
