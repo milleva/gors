@@ -12,7 +12,8 @@ class App extends Component {
         this.state = {
             startScreenIndex: 1,
             gameStarted: false,
-            currentQuestionId: 1
+            currentQuestionId: 1,
+            isAutoYesTimerRunning: false
         }
     }
     
@@ -31,7 +32,7 @@ class App extends Component {
         } else {
             switch (e.keyCode) {
                 case 78:
-                    this.no()
+                    this.nextQuestion("no")
                     console.log("no");
                     break;
                 case 82:
@@ -40,7 +41,7 @@ class App extends Component {
                     break;
                 case 89:
                     console.log("yes")
-                    this.yes()
+                    this.nextQuestion("yes")
                     break
             }
         }
@@ -56,22 +57,38 @@ class App extends Component {
     yes = () => {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
         if(question.yes){
-            this.setState({currentQuestionId: questions.map(q => q.id).filter(id => id === question.yes)[0]})
+            this.setState(
+                {
+                    currentQuestionId: questions.map(q => q.id).filter(id => id === question.yes)[0],
+                    isAutoYesTimerRunning: false
+                })
         }
+        return question
     }
     no = () => {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
         if(question.no){
             this.setState({currentQuestionId: questions.map(q => q.id).filter(id => id === question.no)[0]})
         }
+        return question
+    }
+    
+    nextQuestion = (yesno) => {
+        if(yesno === "yes"){
+            this.yes()
+        }else if(yesno === "no"){
+            this.no()
+        }
+        const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
+        if(question && !question.yesText) {
+            this.setState({isAutoYesTimerRunning: true})
+            setTimeout(() => { if(this.state.isAutoYesTimerRunning) this.yes() }, 5000);
+        }
     }
     
     
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
-        if(question && !question.yesText) {
-            setTimeout(() => this.yes(), 5000);
-        }
         
         return (
             <div className="App">
