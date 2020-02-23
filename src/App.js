@@ -11,7 +11,7 @@ class App extends Component {
         super();
         this.state = {
             startScreenIndex: 1,
-            gameStarted: true,
+            gameStarted: false,
             currentQuestionId: 1,
             isAutoleftTimerRunning: false
         }
