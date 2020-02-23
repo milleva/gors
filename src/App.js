@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
-import saltSackImage from "./gors_salt_sack.JPG"
-import backgroundImage from "./gors_bg.jpeg"
+import saltSackImage from "./images/gors_salt_sack.JPG"
+import backgroundImage from "./images/gors_bg.jpeg"
 import questions from "./questions"
 
 import './App.css';
@@ -11,9 +11,9 @@ class App extends Component {
         super();
         this.state = {
             startScreenIndex: 1,
-            gameStarted: false,
+            gameStarted: true,
             currentQuestionId: 1,
-            isAutoYesTimerRunning: false
+            isAutoleftTimerRunning: false
         }
     }
     
@@ -32,16 +32,16 @@ class App extends Component {
         } else {
             switch (e.keyCode) {
                 case 78:
-                    this.nextQuestion("no")
-                    console.log("no");
+                    this.nextQuestion("right")
+                    console.log("right");
                     break;
                 case 82:
                     this.setState({gameStarted: false, currentQuestionId: 1})
                     console.log("restart");
                     break;
                 case 89:
-                    console.log("yes")
-                    this.nextQuestion("yes")
+                    console.log("left")
+                    this.nextQuestion("left")
                     break
             }
         }
@@ -54,35 +54,35 @@ class App extends Component {
         setTimeout(() => this.rotateScreen(), 4000);
     }
     
-    yes = () => {
+    left = () => {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
-        if(question.yes){
+        if(question.left){
             this.setState(
                 {
-                    currentQuestionId: questions.map(q => q.id).filter(id => id === question.yes)[0],
-                    isAutoYesTimerRunning: false
+                    currentQuestionId: questions.map(q => q.id).filter(id => id === question.left)[0],
+                    isAutoleftTimerRunning: false
                 })
         }
         return question
     }
-    no = () => {
+    right = () => {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
-        if(question.no){
-            this.setState({currentQuestionId: questions.map(q => q.id).filter(id => id === question.no)[0]})
+        if(question.right){
+            this.setState({currentQuestionId: questions.map(q => q.id).filter(id => id === question.right)[0]})
         }
         return question
     }
     
-    nextQuestion = (yesno) => {
-        if(yesno === "yes"){
-            this.yes()
-        }else if(yesno === "no"){
-            this.no()
+    nextQuestion = (leftright) => {
+        if(leftright === "left"){
+            this.left()
+        }else if(leftright === "right"){
+            this.right()
         }
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
-        if(question && !question.yesText) {
-            this.setState({isAutoYesTimerRunning: true})
-            setTimeout(() => { if(this.state.isAutoYesTimerRunning) this.yes() }, 5000);
+        if(question && !question.leftText) {
+            this.setState({isAutoleftTimerRunning: true})
+            setTimeout(() => { if(this.state.isAutoleftTimerRunning) this.left() }, 5000);
         }
     }
     
@@ -100,16 +100,16 @@ class App extends Component {
                                 {question.question &&
                                 <h1 className="title">{question.question}</h1>}
                                 <span>
-                                    {question.yesText &&
+                                    {question.leftText &&
                                     <span
                                         className="button"
-                                        onClick={this.yes}
-                                        style={{...styles.answer, color: "#00de3b"}}>{question.yesText}</span>}
-                                    {question.noText &&
+                                        onClick={this.left}
+                                        style={{...styles.answer, color: "#00de3b"}}>{question.leftText}{!question.left && "(missing)"}</span>}
+                                    {question.rightText &&
                                     <span
                                         className="button"
-                                        onClick={this.no}
-                                        style={{...styles.answer, color: "#ff1414"}}>{question.noText}</span>}
+                                        onClick={this.right}
+                                        style={{...styles.answer, color: "#ff1414"}}>{question.rightText}{!question.right && "(missing)"}</span>}
           </span>
                             </div>
                         </React.Fragment> :
