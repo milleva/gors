@@ -36,6 +36,7 @@
     font-style: normal;
     font-variant: normal;
     text-transform: none;
+    text-align: left;
     position: relative;
     top: -2em;
     text-shadow: -1px -1px 0 #000,
@@ -48,6 +49,7 @@
     border-radius: 20px;
 
     max-width: 60vw;
+    min-width: 40vw;
     white-space: pre-line;
 }
 

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import saltSackImage from "./images/gors_salt_sack.JPG"
 import backgroundImage from "./images/gors_bg.jpeg"
 import questions from "./questions"
@@ -13,7 +12,8 @@ class App extends Component {
             startScreenIndex: 1,
             gameStarted: false,
             currentQuestionId: 1,
-            isAutoleftTimerRunning: false
+            isAutoLeftTimerRunning: false,
+            currentQuestionCharacterIndex: 1
         }
     }
     
@@ -29,6 +29,7 @@ class App extends Component {
         console.log(e.keyCode);
         if (!this.state.gameStarted) {
             this.setState({gameStarted: true})
+            this.expandQuestion(questions[0])
         } else {
             switch (e.keyCode) {
                 case 78:
@@ -47,20 +48,13 @@ class App extends Component {
         }
     }
     
-    rotateScreen = async () => {
-        let i = this.state.startScreenIndex + 1
-        if (i > 3) i = 0
-        this.setState({startScreenIndex: i})
-        setTimeout(() => this.rotateScreen(), 4000);
-    }
-    
     left = () => {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
         if(question.left){
             this.setState(
                 {
                     currentQuestionId: questions.map(q => q.id).filter(id => id === question.left)[0],
-                    isAutoleftTimerRunning: false
+                    isAutoLeftTimerRunning: false
                 })
         }
         return question
@@ -79,13 +73,23 @@ class App extends Component {
         }else if(leftright === "right"){
             this.right()
         }
-        const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
+        const question = questions.find(q => q.id === this.state.currentQuestionId)
         if(question && !question.leftText) {
-            this.setState({isAutoleftTimerRunning: true})
-            setTimeout(() => { if(this.state.isAutoleftTimerRunning) this.left() }, 5000);
+            this.setState({isAutoLeftTimerRunning: true})
+            setTimeout(() => {
+                if(this.state.isAutoLeftTimerRunning) this.nextQuestion("left")
+            }, 5000);
         }
+        this.setState({currentQuestionCharacterIndex: 1})
+        if(question && question.question) this.expandQuestion(question)
     }
     
+    expandQuestion = (question) => {
+        this.setState({currentQuestionCharacterIndex: this.state.currentQuestionCharacterIndex+1})
+        if(this.state.currentQuestionCharacterIndex < question.question.length){
+            setTimeout(() => this.expandQuestion(question), 35)
+        }
+    }
     
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
@@ -98,7 +102,7 @@ class App extends Component {
                             <img src={backgroundImage} alt="TAUSTA" className="background-image"/>
                             <div className="app-content">
                                 {question.question &&
-                                <h1 className="title">{question.question}</h1>}
+                                <h1 className="title">{question.question.substring(0, this.state.currentQuestionCharacterIndex)}</h1>}
                                 <span>
                                     {question.leftText &&
                                     <span
