@@ -104,12 +104,12 @@ class App extends Component {
                                     <span
                                         className="button"
                                         onClick={this.left}
-                                        style={{...styles.answer, color: "#00de3b"}}>{question.leftText}{!question.left && "(missing)"}</span>}
+                                        style={{...styles.answer, color: "#7de7ff"}}>{question.leftText}{!question.left && "(missing)"}</span>}
                                     {question.rightText &&
                                     <span
                                         className="button"
                                         onClick={this.right}
-                                        style={{...styles.answer, color: "#ff1414"}}>{question.rightText}{!question.right && "(missing)"}</span>}
+                                        style={{...styles.answer, color: "#eba3ff"}}>{question.rightText}{!question.right && "(missing)"}</span>}
           </span>
                             </div>
                         </React.Fragment> :
