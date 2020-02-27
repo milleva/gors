@@ -11,7 +11,7 @@ export default [
         id: 2,
         question: "Go look for answers",
         left: 3,
-        right: null,
+        right: 31,
         leftText: "LEFT",
         rightText: "RIGHT"
     },
@@ -57,7 +57,7 @@ export default [
     
     {
         id: 8,
-        question: "You found an ancient terasure but you need a key to open it",
+        question: "You found an ancient treasure but you need a key to open it",
         left: 9
     },
     {
@@ -233,7 +233,258 @@ export default [
         left: 1,
         right: 1,
         leftText: "OK"
+    },
+    
+    {
+        id: 31,
+        leftText: "Take a Mountain walk",
+        rightText: "Explore the woods",
+        left: 32,
+        right: 48
+    },
+    {
+        id: 32,
+        question: "You come across the mountain mafia",
+        leftText: "Pay the fee",
+        rightText: "Tell them they can't own the mountain",
+        left: 33,
+        right: 40
+    },
+    {
+        id: 33,
+        question: "You found an ancient treasure but it's locked",
+        left: 34,
+    },
+    {
+        id: 34,
+        question: "Go look for the key",
+        leftText: "Snake hole",
+        rightText: "Spider nest",
+        left: 35,
+        right: 36
+    },
+    {
+        id: 35,
+        question: "YOU FOUND AN ENDING\n" +
+        "White blids: x\n" +
+        "lost and found: route, ''freedom'', fear, balance ",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 36,
+        question: "You opened the ancient treasure and " +
+        "set free the Mountain Spirit. It's very grateful " +
+        "of your actions and gives you one wish.",
+        leftText: "Bag of Salt",
+        rightText: "Cup of Tea",
+        left: 37,
+        right: 39
+    },
+    {
+        id: 37,
+        question: "What a nice wish but unfortunately " +
+        "also the one wish I can't execute. Here's water, " +
+        "you will need it when you find the saltbag.",
+        style: "speech-bubble",
+        left: 38
+    },
+    {
+        id: 38,
+        question: "GAME OCEAN\n" +
+        "White blids: x\n" +
+        "lost and found: route, ''freedom'', mountain spirit, (endless end), water",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 39,
+        question: "YOU FOUND AN ENDING\n" +
+        "White blids: x\n" +
+        "lost and found: route, ''freedom'', mountain spirit, spiritual enlightenment",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 40,
+        leftText: "Kiss",
+        rightText: "Tell a story",
+        left: 41,
+        right: 43
+    },
+    {
+        id: 41,
+        leftText: "Give a gift",
+        rightText: "Tell a story",
+        left: 42,
+        right: 43
+    },
+    {
+        id: 42,
+        question: "GAME OVER\n" +
+        "White blids: x\n" +
+        "lost and found: route, mountain ticket, relation exploration, theft, deadly things",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 43,
+        leftText: "Add some salt",
+        rightText: "Pass the salt",
+        left: 44,
+        right: 47
+    },
+    {
+        id: 44,
+        leftText: "Add salt",
+        rightText: "Pass the salt",
+        left: 45,
+        right: 47
+    },
+    {
+        id: 45,
+        leftText: "Add salt",
+        rightText: "Pass the salt",
+        left: 46,
+        right: 47
+    },
+    {
+        id: 46,
+        question: "YOU FOUND AN ENDING\n" +
+        "White blids: x\n" +
+        "lost and found: route, mountain ticket, memories, relation exploration, bruises",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 47,
+        question: "YOU FOUND AN ENDING\n" +
+        "White blids: x\n" +
+        "lost and found: route, mountain ticket, memories, relation exploration, ease",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 48,
+        question: "Ask the frog",
+        leftText: "where is the saltbag?",
+        rightText: "where are we?",
+        left: 49,
+        right: 58
+    },
+    {
+        id: 49,
+        question: "Before I answer help me with the stone garden. " +
+        "someone has destroyed it.",
+        style: "speech-bubble",
+        left: 50
+    },
+    {
+        id: 50,
+        question: "Push any button when the stone garden is ready",
+        leftText: "",
+        rightText: "",
+        left: 51,
+        right: 51
+    },
+    {
+        id: 51,
+        question: "Ahh.. Thank you, you kind creatures. I've heard" +
+        "the saltbag is in the endless desert but be cautious.",
+        style: "speech-bubble",
+        left: 52
+    },
+    {
+        id: 52,
+        leftText: "Venture the Endless desert",
+        rightText: "Level up",
+        left: 53,
+        right: 54
+    },
+    {
+        id: 53,
+        question: "GAME OVER\n" +
+        "White blids: x\n" +
+        "lost and found: route, business, hope, recklessness",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 54,
+        leftText: "Venture the Endless desert",
+        rightText: "Bonus Game",
+        left: 55,
+        right: 56
+    },
+    {
+        id: 55,
+        question: "YOU FOUND AN ENDING\n" +
+        "White blids: x\n" +
+        "lost and found: route, business, growth, unforgettable dance",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 56,
+        leftText: "Venture the endless desert",
+        rightText: "Go to the mountain",
+        left: 57,
+        right: 57
+    },
+    {
+        id: 57,
+        question: "GAME OVER\n" +
+        "White blids: x\n" +
+        "lost and found: route, business, growth, accident, sorrow",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 58,
+        question: "Mmm... We are in a time tunnel." +
+        "It's quite complicated. Maybe you can understand " +
+        "it if I refer it to food",
+        style: "speech-bubble",
+        left: 59
+    },
+    {
+        id: 59,
+        leftText: "Eat the frog",
+        rightText: "Go back in time",
+        left: 60,
+        right: 61
+    },
+    {
+        id: 60,
+        question: "GAME OVER\n" +
+        "White blids: x\n" +
+        "lost and found: route, frog, knowledge, poison",
+        left: 1,
+        right: 1,
+        leftText: "OK"
+    },
+    {
+        id: 61,
+        question: "TIMES UP\n" +
+        "White blids: x\n" +
+        "lost and found: route, frog, knowledge, shape of time",
+        left: 1,
+        right: 1,
+        leftText: "OK"
     }
+    
+    
+    
+    
 ]
 
 /*

@@ -89,7 +89,7 @@ class App extends Component {
     expandQuestion = (question) => {
         this.setState({currentQuestionCharacterIndex: this.state.currentQuestionCharacterIndex+1})
         if(this.state.currentQuestionCharacterIndex < question.question.length){
-            setTimeout(() => this.expandQuestion(question), 35)
+            setTimeout(() => this.expandQuestion(question), 25)
         }
     }
     
@@ -122,13 +122,13 @@ class App extends Component {
                                     {question.leftText &&
                                     <span
                                         className="button"
-                                        onClick={this.left}
-                                        style={{...styles.answer, color: "#7de7ff"}}>{question.leftText}{!question.left && "(missing)"}</span>}
+                                        onClick={() => this.answerQuestion("left")}
+                                        style={{...styles.answer, color: "#e1eff2"}}>{question.leftText}{!question.left && "(missing)"}</span>}
                                         {question.rightText &&
                                         <span
                                             className="button"
-                                            onClick={this.right}
-                                            style={{...styles.answer, color: "#eba3ff"}}>{question.rightText}{!question.right && "(missing)"}</span>}
+                                            onClick={() => this.answerQuestion("right")}
+                                            style={{...styles.answer, color: "#fef5ff"}}>{question.rightText}{!question.right && "(missing)"}</span>}
           </span>
                                 </div>}
                         </React.Fragment> :
