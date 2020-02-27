@@ -13,7 +13,9 @@ class App extends Component {
             gameStarted: false,
             currentQuestionId: 1,
             isAutoLeftTimerRunning: false,
-            currentQuestionCharacterIndex: 1
+            currentQuestionCharacterIndex: 1,
+            isDisplayingReply: false,
+            latestReply: ""
         }
     }
     
@@ -33,7 +35,7 @@ class App extends Component {
         } else {
             switch (e.keyCode) {
                 case 78:
-                    this.nextQuestion("right")
+                    if(this.isGameInputAllowed()) this.answerQuestion("right")
                     console.log("right");
                     break;
                 case 82:
@@ -42,7 +44,7 @@ class App extends Component {
                     break;
                 case 89:
                     console.log("left")
-                    this.nextQuestion("left")
+                    if(this.isGameInputAllowed()) this.answerQuestion("left")
                     break
             }
         }
@@ -91,6 +93,17 @@ class App extends Component {
         }
     }
     
+    answerQuestion = (leftRight) => {
+        const question = questions.find(q => q.id === this.state.currentQuestionId)
+        this.setState({isDisplayingReply: true, latestReply: question[`${leftRight}Text`]})
+        setTimeout(() => {
+            this.nextQuestion(leftRight)
+            this.setState({isDisplayingReply: false})
+        }, 5000)
+    }
+    
+    isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning && !this.state.isDisplayingReply
+    
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
         
@@ -100,22 +113,24 @@ class App extends Component {
                     {this.state.gameStarted ?
                         <React.Fragment>
                             <img src={backgroundImage} alt="TAUSTA" className="background-image"/>
-                            <div className="app-content">
-                                {question.question &&
-                                <h1 className="title">{question.question.substring(0, this.state.currentQuestionCharacterIndex)}</h1>}
-                                <span>
+                            {this.state.isDisplayingReply ?
+                                <h1 className="title">{this.state.latestReply}</h1> :
+                                <div className="app-content">
+                                    {question.question &&
+                                    <h1 className="title">{question.question.substring(0, this.state.currentQuestionCharacterIndex)}</h1>}
+                                    <span>
                                     {question.leftText &&
                                     <span
                                         className="button"
                                         onClick={this.left}
                                         style={{...styles.answer, color: "#7de7ff"}}>{question.leftText}{!question.left && "(missing)"}</span>}
-                                    {question.rightText &&
-                                    <span
-                                        className="button"
-                                        onClick={this.right}
-                                        style={{...styles.answer, color: "#eba3ff"}}>{question.rightText}{!question.right && "(missing)"}</span>}
+                                        {question.rightText &&
+                                        <span
+                                            className="button"
+                                            onClick={this.right}
+                                            style={{...styles.answer, color: "#eba3ff"}}>{question.rightText}{!question.right && "(missing)"}</span>}
           </span>
-                            </div>
+                                </div>}
                         </React.Fragment> :
                         <React.Fragment>
                             <img
