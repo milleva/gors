@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fa5d5c6-e0ba-4bbb-8c89-a937c6c2d6e6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/questions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/questions.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +16,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="436">
+              <caret line="136" column="97" selection-start-line="136" selection-start-column="97" selection-end-line="136" selection-end-column="97" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -31,8 +28,8 @@
       <file leaf-file-name="questions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/questions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="401" column="31" lean-forward="true" selection-start-line="401" selection-start-column="31" selection-end-line="401" selection-end-column="31" />
+            <state relative-caret-position="338">
+              <caret line="475" column="31" lean-forward="true" selection-start-line="475" selection-start-column="31" selection-end-line="475" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -105,8 +102,10 @@
       <find>pay the</find>
       <find>\n\n</find>
       <find>isAutoLeftTimerRunning</find>
-      <find>expand</find>
       <find>speech</find>
+      <find>expand</find>
+      <find>time tunn</find>
+      <find>isQuestionExpanding</find>
     </findStrings>
     <replaceStrings>
       <replace>right</replace>
@@ -122,8 +121,8 @@
       <list>
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/questions.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/questions.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
@@ -278,12 +277,12 @@
       <workItem from="1582727699724" duration="2196000" />
       <workItem from="1582814039457" duration="9824000" />
       <workItem from="1582877403889" duration="620000" />
-      <workItem from="1582900196793" duration="1203000" />
+      <workItem from="1582900196793" duration="1892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49367000" />
+    <option name="totallyTimeSpent" value="50056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -621,15 +620,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/questions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="401" column="31" lean-forward="true" selection-start-line="401" selection-start-column="31" selection-end-line="401" selection-end-column="31" />
+        <state relative-caret-position="338">
+          <caret line="475" column="31" lean-forward="true" selection-start-line="475" selection-start-column="31" selection-end-line="475" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="436">
+          <caret line="136" column="97" selection-start-line="136" selection-start-column="97" selection-end-line="136" selection-end-column="97" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

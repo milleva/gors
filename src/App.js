@@ -15,6 +15,7 @@ class App extends Component {
             gameStarted: false,
             currentQuestionId: 1,
             isAutoLeftTimerRunning: false,
+            isQuestionExpanding: false,
             currentQuestionCharacterIndex: 1,
             isDisplayingReply: false,
             latestReply: ""
@@ -33,7 +34,7 @@ class App extends Component {
         console.log(e.keyCode);
         if (!this.state.gameStarted) {
             this.setState({gameStarted: true})
-            this.expandQuestion(questions.find(q => q.id === this.state.currentQuestionId))
+            this.startExpandingQuestion(questions.find(q => q.id === this.state.currentQuestionId))
         } else {
             switch (e.keyCode) {
                 case 78:
@@ -85,13 +86,20 @@ class App extends Component {
             }, dev ? 50 : 5000);
         }
         this.setState({currentQuestionCharacterIndex: 1})
-        if(question && question.question) this.expandQuestion(question)
+        if(question && question.question) this.startExpandingQuestion(question)
+    }
+    
+    startExpandingQuestion = (question) => {
+        this.setState({isQuestionExpanding: true})
+        this.expandQuestion(question)
     }
     
     expandQuestion = (question) => {
         this.setState({currentQuestionCharacterIndex: this.state.currentQuestionCharacterIndex+1})
         if(this.state.currentQuestionCharacterIndex < question.question.length){
             setTimeout(() => this.expandQuestion(question), 25)
+        }else{
+            this.setState({isQuestionExpanding: false})
         }
     }
     
@@ -104,7 +112,7 @@ class App extends Component {
         }, dev ? 50 : 5000)
     }
     
-    isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning && !this.state.isDisplayingReply
+    isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning && !this.state.isDisplayingReply && !this.state.isQuestionExpanding
     
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
@@ -121,12 +129,12 @@ class App extends Component {
                                     {question.question &&
                                     <h1 className={question.style || "title"}>{question.question.substring(0, this.state.currentQuestionCharacterIndex)}</h1>}
                                     <span>
-                                    {question.leftText &&
+                                    {question.leftText && !this.state.isQuestionExpanding &&
                                     <span
                                         className="button"
                                         onClick={() => this.answerQuestion("left")}
                                         style={{...styles.answer, color: "#e1eff2"}}>{question.leftText}{!question.left && "(missing)"}</span>}
-                                        {question.rightText &&
+                                        {question.rightText && !this.state.isQuestionExpanding &&
                                         <span
                                             className="button"
                                             onClick={() => this.answerQuestion("right")}
