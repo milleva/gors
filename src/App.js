@@ -5,6 +5,8 @@ import questions from "./questions"
 
 import './App.css';
 
+const dev = false
+
 class App extends Component {
     constructor() {
         super();
@@ -31,7 +33,7 @@ class App extends Component {
         console.log(e.keyCode);
         if (!this.state.gameStarted) {
             this.setState({gameStarted: true})
-            this.expandQuestion(questions[0])
+            this.expandQuestion(questions.find(q => q.id === this.state.currentQuestionId))
         } else {
             switch (e.keyCode) {
                 case 78:
@@ -80,7 +82,7 @@ class App extends Component {
             this.setState({isAutoLeftTimerRunning: true})
             setTimeout(() => {
                 if(this.state.isAutoLeftTimerRunning) this.nextQuestion("left")
-            }, 5000);
+            }, dev ? 50 : 5000);
         }
         this.setState({currentQuestionCharacterIndex: 1})
         if(question && question.question) this.expandQuestion(question)
@@ -99,7 +101,7 @@ class App extends Component {
         setTimeout(() => {
             this.nextQuestion(leftRight)
             this.setState({isDisplayingReply: false})
-        }, 5000)
+        }, dev ? 50 : 5000)
     }
     
     isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning && !this.state.isDisplayingReply
@@ -117,7 +119,7 @@ class App extends Component {
                                 <h1 className="title">{this.state.latestReply}</h1> :
                                 <div className="app-content">
                                     {question.question &&
-                                    <h1 className="title">{question.question.substring(0, this.state.currentQuestionCharacterIndex)}</h1>}
+                                    <h1 className={question.style || "title"}>{question.question.substring(0, this.state.currentQuestionCharacterIndex)}</h1>}
                                     <span>
                                     {question.leftText &&
                                     <span

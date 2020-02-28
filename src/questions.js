@@ -47,7 +47,8 @@ export default [
     },
     {
         id: 7,
-        question: "YOU FOUND AN ENDING\n" +
+        style: "game-over",
+        question: "YOU FOUND AN ENDING\n\n" +
         "White blids: x\n" +
         "lost and found: route, frogfriend, empowerement, poison, combo = gloves+fungi",
         left: 1,
@@ -76,7 +77,8 @@ export default [
     },
     {
         id: 11,
-        question: "YOU FOUND AN ENDING\n" +
+        style: "game-over",
+        question: "YOU FOUND AN ENDING\n\n" +
         "White blids: x\n" +
         "lost and found: route, hyper vision, rolling spin, body care, separation",
         left: 1,
@@ -94,7 +96,8 @@ export default [
     },
     {
         id: 13,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, hyper vision, rolling spin, food, hunger",
         left: 1,
@@ -110,7 +113,8 @@ export default [
     },
     {
         id: 15,
-        question: "YOU FOUND AN ENDINGR\n" +
+        style: "game-over",
+        question: "YOU FOUND AN ENDINGR\n\n" +
         "White blids: x\n" +
         "lost and found: route, hyper vision, rolling spin, freedom",
         left: 1,
@@ -132,7 +136,8 @@ export default [
     },
     {
         id: 18,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, hyper vision, rolling spin, food, golden metal, a ghost treasure",
         left: 1,
@@ -141,7 +146,8 @@ export default [
     },
     {
         id: 19,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, hyper vision, rolling spin, food, golden metal, ancient necessary",
         left: 1,
@@ -176,7 +182,8 @@ export default [
     },
     {
         id: 24,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, frog friend, food, spirits, dead end",
         left: 1,
@@ -185,7 +192,8 @@ export default [
     },
     {
         id: 25,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, frog friend, food, spirits, sorrow",
         left: 1,
@@ -201,7 +209,8 @@ export default [
     },
     {
         id: 27,
-        question: "YOU FOUND AN ENDING\n" +
+        style: "game-over",
+        question: "YOU FOUND AN ENDING\n\n" +
         "White blids: x\n" +
         "lost and found: route, hyper vision, rolling spin, body care, trust, salt",
         left: 1,
@@ -218,7 +227,8 @@ export default [
     },
     {
         id: 29,
-        question: "GOOD BYE\n" +
+        style: "game-over",
+        question: "GOOD BYE\n\n" +
         "White blids: x\n" +
         "lost and found: route, hyper vision, rolling spin, body care, trust, skill of precence",
         left: 1,
@@ -227,7 +237,8 @@ export default [
     },
     {
         id: 30,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, frog friend, empowerement, potion, deadly fingers",
         left: 1,
@@ -265,7 +276,8 @@ export default [
     },
     {
         id: 35,
-        question: "YOU FOUND AN ENDING\n" +
+        style: "game-over",
+        question: "YOU FOUND AN ENDING\n\n" +
         "White blids: x\n" +
         "lost and found: route, ''freedom'', fear, balance ",
         left: 1,
@@ -292,7 +304,8 @@ export default [
     },
     {
         id: 38,
-        question: "GAME OCEAN\n" +
+        style: "game-over",
+        question: "GAME OCEAN\n\n" +
         "White blids: x\n" +
         "lost and found: route, ''freedom'', mountain spirit, (endless end), water",
         left: 1,
@@ -301,7 +314,8 @@ export default [
     },
     {
         id: 39,
-        question: "YOU FOUND AN ENDING\n" +
+        style: "game-over",
+        question: "YOU FOUND AN ENDING\n\n" +
         "White blids: x\n" +
         "lost and found: route, ''freedom'', mountain spirit, spiritual enlightenment",
         left: 1,
@@ -324,7 +338,8 @@ export default [
     },
     {
         id: 42,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, mountain ticket, relation exploration, theft, deadly things",
         left: 1,
@@ -354,6 +369,7 @@ export default [
     },
     {
         id: 46,
+        style: "game-over",
         question: "YOU FOUND AN ENDING\n" +
         "White blids: x\n" +
         "lost and found: route, mountain ticket, memories, relation exploration, bruises",
@@ -363,7 +379,8 @@ export default [
     },
     {
         id: 47,
-        question: "YOU FOUND AN ENDING\n" +
+        style: "game-over",
+        question: "YOU FOUND AN ENDING\n\n" +
         "White blids: x\n" +
         "lost and found: route, mountain ticket, memories, relation exploration, ease",
         left: 1,
@@ -409,7 +426,8 @@ export default [
     },
     {
         id: 53,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, business, hope, recklessness",
         left: 1,
@@ -425,7 +443,8 @@ export default [
     },
     {
         id: 55,
-        question: "YOU FOUND AN ENDING\n" +
+        style: "game-over",
+        question: "YOU FOUND AN ENDING\n\n" +
         "White blids: x\n" +
         "lost and found: route, business, growth, unforgettable dance",
         left: 1,
@@ -441,7 +460,8 @@ export default [
     },
     {
         id: 57,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, business, growth, accident, sorrow",
         left: 1,
@@ -450,9 +470,9 @@ export default [
     },
     {
         id: 58,
-        question: "Mmm... We are in a time tunnel." +
+        question: "Mmm... We are in a time tunnel. " +
         "It's quite complicated. Maybe you can understand " +
-        "it if I refer it to food",
+        "it if I refer it to food.",
         style: "speech-bubble",
         left: 59
     },
@@ -465,7 +485,8 @@ export default [
     },
     {
         id: 60,
-        question: "GAME OVER\n" +
+        style: "game-over",
+        question: "GAME OVER\n\n" +
         "White blids: x\n" +
         "lost and found: route, frog, knowledge, poison",
         left: 1,
@@ -474,7 +495,8 @@ export default [
     },
     {
         id: 61,
-        question: "TIMES UP\n" +
+        style: "game-over",
+        question: "TIMES UP\n\n" +
         "White blids: x\n" +
         "lost and found: route, frog, knowledge, shape of time",
         left: 1,
