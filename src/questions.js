@@ -258,8 +258,8 @@ export default [
         question: "You come across the mountain mafia",
         leftText: "Pay the fee",
         rightText: "Tell them they can't own the mountain",
-        left: 33,
-        right: 40
+        left: 40,
+        right: 33
     },
     {
         id: 33,
