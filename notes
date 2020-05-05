@@ -1,7 +1,10 @@
 
-- typewriter-animaatio kysymykseen ja fade in vastauksiin(?)
-
-
 - biisin vaihto uuden kysymyksen mukana(?) ei vielä varmaa!
+- tee "danger bubble" (vrt speech-bubble)
+	- danger bubble josta KLIKATAAN pois: samanlainen blink-aniimaatio kuin "press .. to start game"
+	- ... josta mennään automaattisesti pois: normi teemaan sopiva teksti
+
+
+
 
 

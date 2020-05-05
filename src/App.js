@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import saltSackImage from "./images/gors_salt_sack.JPG"
+import startScreenImage from "./images/bg5.jpeg"
 import backgroundImage from "./images/gors_bg.jpeg"
 import questions from "./questions"
 
@@ -124,27 +125,27 @@ class App extends Component {
                         <React.Fragment>
                             <img src={backgroundImage} alt="TAUSTA" className="background-image"/>
                             {this.state.isDisplayingReply ?
-                                <h1 className="title">{this.state.latestReply}</h1> :
+                                <h1 className="displayedReply">{this.state.latestReply}</h1> :
                                 <div className="app-content">
                                     {question.question &&
                                     <h1 className={question.style || "title"}>{question.question.substring(0, this.state.currentQuestionCharacterIndex)}</h1>}
                                     <span>
                                     {question.leftText && !this.state.isQuestionExpanding &&
-                                    <span
+                                    <div
                                         className="button"
                                         onClick={() => this.answerQuestion("left")}
-                                        style={{...styles.answer, color: "#e1eff2"}}>{question.leftText}{!question.left && "(missing)"}</span>}
+                                        style={{...styles.answer}}>{"■ " + question.leftText.toLowerCase()}{!question.left && "(missing)"}</div>}
                                         {question.rightText && !this.state.isQuestionExpanding &&
-                                        <span
+                                        <div
                                             className="button"
                                             onClick={() => this.answerQuestion("right")}
-                                            style={{...styles.answer, color: "#fef5ff"}}>{question.rightText}{!question.right && "(missing)"}</span>}
+                                            style={{...styles.answer}}>{"▴ " + question.rightText.toLowerCase()}{!question.right && "(missing)"}</div>}
           </span>
                                 </div>}
                         </React.Fragment> :
                         <React.Fragment>
                             <img
-                                src={saltSackImage}
+                                src={startScreenImage}
                                 alt="TAUSTA" className="background-image"/>
                             <div className="app-content">
                                 <h3 className="blinking">PRESS ANY BUTTON TO START GAME...</h3>
@@ -158,13 +159,12 @@ class App extends Component {
 
 const styles = {
     answer: {
-        margin: 45,
-        fontWeight: "bold",
-        fontSize: "1.2em",
-        backgroundColor: "RGB(0,0,0,.6)",
+        margin: 35,
+        fontSize: "2.5em",
         padding: 15,
         borderRadius: 10,
-        opacity: ".75"
+        opacity: ".75",
+        textShadow:  "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
     }
 }
 
