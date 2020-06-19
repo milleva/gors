@@ -126,6 +126,7 @@ class App extends Component {
                     <Sound
                         url="GORS_1.wav"
                         playStatus={!dev && Sound.status.PLAYING}
+                        loop={true}
                     />
                     {this.state.gameStarted ?
                         <React.Fragment>
