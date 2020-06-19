@@ -4,16 +4,16 @@ export default [
         question: "ENTER THE WORLD",
         left: 2,
         right: 2,
-        leftText: "YES",
-        rightText: "WOHOO"
+        leftText: "Yes",
+        rightText: "Wohoo"
     },
     {
         id: 2,
         question: "Go look for answers",
         left: 3,
         right: 31,
-        leftText: "LEFT",
-        rightText: "RIGHT"
+        leftText: "Left",
+        rightText: "Right"
     },
     {
         id: 3,
@@ -27,8 +27,8 @@ export default [
         question: "THUNDER STRIKES",
         left: 5,
         right: 5,
-        leftText: "Run to safety",
-        rightText: "Embrace the thunder"
+        leftText: "Run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
+        rightText: "Embrace the thunder" // -> "moment of blooming" jokaiseen loppuun lost and found osioon
     },
     {
         id: 5,
@@ -43,14 +43,14 @@ export default [
         left: 7,
         right: 30,
         leftText: "Help Thalamis",
-        rightText: "Search the saltbag from iglu"
+        rightText: "Continue with Thalatta"
     },
     {
         id: 7,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, frogfriend, empowerement, poison, combo = gloves+fungi",
+        "LOST AND FOUND: \n  route, frog, empowerement, poison, combo = gloves+fungi",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -65,7 +65,7 @@ export default [
         id: 9,
         left: 10,
         right: 12,
-        leftText: "JUMPS AND TURNS",
+        leftText: "Jumps and turns",
         rightText: "SWING AND FLY"
     },
     {
@@ -99,7 +99,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, hunger",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, hunger, hangry friend",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -107,7 +107,7 @@ export default [
     {
         id: 14,
         leftText: "LEVEL UP",
-        rightText: "SEARCH FOR THE KEY (FROM THE SPIDER'S NEST)",
+        rightText: "SEARCH FOR THE TREASURE KEY",
         left: 15,
         right: 16
     },
@@ -116,7 +116,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDINGR\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, freedom",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, freedom, lovely afternoon",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -124,7 +124,7 @@ export default [
     {
         id: 16,
         question: "Open the ancient treasure with...",
-        leftText: "GOLDEN METAL",
+        leftText: "MEDALLION",
         rightText: "ROLLING SPIN",
         left: 17,
         right: 19
@@ -139,7 +139,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, golden metal, a ghost treasure",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, medallion, a ghost treasure",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -149,7 +149,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, golden metal, ancient necessary",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, medallion, ancient necessary",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -185,7 +185,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, frog friend, food, spirits, dead end",
+        "LOST AND FOUND: \n  route, frog, food, spirits, dead end",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -195,7 +195,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, frog friend, food, spirits, sorrow",
+        "LOST AND FOUND: \n  route, frog, food, spirits, sorrow",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -240,7 +240,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, frog friend, empowerement, potion, deadly fingers",
+        "LOST AND FOUND: \n  route, frog, empowerement, potion, deadly fingers",
         left: 1,
         right: 1,
         leftText: "OK"

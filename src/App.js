@@ -6,7 +6,7 @@ import questions from "./questions"
 
 import './App.css';
 
-const dev = false
+const dev = true
 
 class App extends Component {
     constructor() {
