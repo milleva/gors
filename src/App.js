@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import saltSackImage from "./images/gors_salt_sack.JPG"
 import startScreenImage from "./images/bg5.jpeg"
 import backgroundImage from "./images/gors_bg.jpeg"
 import questions from "./questions"
+import Sound from "react-sound"
 
 import './App.css';
 
-const dev = true
+const dev = false
 
 class App extends Component {
     constructor() {
@@ -49,6 +49,8 @@ class App extends Component {
                 case 89:
                     console.log("left")
                     if(this.isGameInputAllowed()) this.answerQuestion("left")
+                    break
+                default:
                     break
             }
         }
@@ -121,6 +123,10 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
+                    <Sound
+                        url="GORS_1.wav"
+                        playStatus={!dev && Sound.status.PLAYING}
+                    />
                     {this.state.gameStarted ?
                         <React.Fragment>
                             <img src={backgroundImage} alt="TAUSTA" className="background-image"/>
