@@ -19,7 +19,8 @@ class App extends Component {
             isQuestionExpanding: false,
             currentQuestionCharacterIndex: 1,
             isDisplayingReply: false,
-            latestReply: ""
+            latestReply: "",
+            soundFile: 1
         }
     }
     
@@ -106,7 +107,13 @@ class App extends Component {
         }
     }
     
+    toggleSoundFile = () => {
+        if (this.state.soundFile === 1) this.setState({soundFile: 2})
+        else this.setState({soundFile: 1})
+    }
+    
     answerQuestion = (leftRight) => {
+        this.toggleSoundFile()
         const question = questions.find(q => q.id === this.state.currentQuestionId)
         this.setState({isDisplayingReply: true, latestReply: question[`${leftRight}Text`]})
         setTimeout(() => {
@@ -124,7 +131,7 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                     <Sound
-                        url="GORS_1.wav"
+                        url={`GORS_${this.state.soundFile}.wav`}
                         playStatus={!dev && Sound.status.PLAYING}
                         loop={true}
                     />
