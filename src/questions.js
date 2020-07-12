@@ -28,7 +28,8 @@ export default [
         left: 5,
         right: 5,
         leftText: "Run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
-        rightText: "Embrace the thunder" // -> "moment of blooming" jokaiseen loppuun lost and found osioon
+        rightText: "Embrace the thunder", // -> "moment of blooming" jokaiseen loppuun lost and found osioon
+        
     },
     {
         id: 5,
@@ -334,14 +335,15 @@ export default [
         leftText: "Give a gift",
         rightText: "Tell a story",
         left: 42,
-        right: 43
+        right: 43,
+        endingEdit: ", relation exploration"
     },
     {
         id: 42,
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, relation exploration, theft, deadly things",
+        "LOST AND FOUND: \n  route, mountain ticket, theft, deadly things",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -372,7 +374,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, memories, relation exploration, bruises",
+        "LOST AND FOUND: \n  route, mountain ticket, memories, bruises",
         left: 1,
         right: 1,
         leftText: "OK"
@@ -382,7 +384,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, memories, relation exploration, ease",
+        "LOST AND FOUND: \n  route, mountain ticket, memories, ease",
         left: 1,
         right: 1,
         leftText: "OK"

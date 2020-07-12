@@ -6,7 +6,7 @@ import Sound from "react-sound"
 
 import './App.css';
 
-const dev = false
+const dev = true
 
 class App extends Component {
     constructor() {
@@ -20,7 +20,8 @@ class App extends Component {
             currentQuestionCharacterIndex: 1,
             isDisplayingReply: false,
             latestReply: "",
-            soundFile: 1
+            soundFile: 1,
+            endingEdit: ""
         }
     }
     
@@ -90,6 +91,8 @@ class App extends Component {
             }, dev ? 50 : 5000);
         }
         this.setState({currentQuestionCharacterIndex: 1})
+        if(question && question.id === 1) this.setState({endingEdit: ""})
+        if(question && question.endingEdit) this.setState({endingEdit: question.endingEdit})
         if(question && question.question) this.startExpandingQuestion(question)
     }
     
@@ -100,7 +103,9 @@ class App extends Component {
     
     expandQuestion = (question) => {
         this.setState({currentQuestionCharacterIndex: this.state.currentQuestionCharacterIndex+1})
-        if(this.state.currentQuestionCharacterIndex < question.question.length){
+        const originalQuestionLength = question.question.length
+        const maxLength = question.style === "game-over" ? originalQuestionLength + this.state.endingEdit.length : originalQuestionLength
+        if(this.state.currentQuestionCharacterIndex < maxLength){
             setTimeout(() => this.expandQuestion(question), 25)
         }else{
             this.setState({isQuestionExpanding: false})
@@ -126,7 +131,8 @@ class App extends Component {
     
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
-        
+        const displayedMainText = question.style === "game-over" ? question.question + this.state.endingEdit : question.question
+        console.log(displayedMainText)
         return (
             <div className="App">
                 <header className="App-header">
@@ -142,7 +148,9 @@ class App extends Component {
                                 <h1 className="displayedReply">{this.state.latestReply}</h1> :
                                 <div className="app-content">
                                     {question.question &&
-                                    <h1 className={question.style || "title"}>{question.question.substring(0, this.state.currentQuestionCharacterIndex)}</h1>}
+                                    <h1 className={question.style || "title"}>
+                                        {displayedMainText.substring(0, this.state.currentQuestionCharacterIndex)}
+                                        </h1>}
                                     <span>
                                     {question.leftText && !this.state.isQuestionExpanding &&
                                     <div
