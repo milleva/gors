@@ -6,7 +6,11 @@ import Sound from "react-sound"
 
 import './App.css';
 
-const dev = true
+const dev = false
+
+const toNameSpellingFormat = (str) => {
+    return str[0].toUpperCase() + str.substr(1, str.length).toLowerCase()
+}
 
 class App extends Component {
     constructor() {
@@ -145,7 +149,7 @@ class App extends Component {
                         <React.Fragment>
                             <img src={backgroundImage} alt="TAUSTA" className="background-image"/>
                             {this.state.isDisplayingReply ?
-                                <h1 className="displayedReply">{this.state.latestReply}</h1> :
+                                <h1 className="displayedReply">{toNameSpellingFormat(this.state.latestReply)}</h1> :
                                 <div className="app-content">
                                     {question.question &&
                                     <h1 className={question.style || "title"}>

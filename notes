@@ -1,5 +1,5 @@
 
-- biisin vaihto uuden kysymyksen mukana(?) kusee!
+- biisin vaihto uuden kysymyksen mukana(?)
 - tee "danger bubble" (vrt speech-bubble)
 	- danger bubble josta KLIKATAAN pois: samanlainen blink-aniimaatio kuin "press .. to start game" (caps lockilla)
 	- ... josta mennään automaattisesti pois: normi teemaan sopiva teksti (caps lockilla)

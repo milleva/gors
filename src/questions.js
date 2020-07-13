@@ -25,11 +25,20 @@ export default [
     {
         id: 4,
         question: "THUNDER STRIKES",
-        left: 5,
+        left: 40000000002,
         right: 5,
         leftText: "Run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
         rightText: "Embrace the thunder", // -> "moment of blooming" jokaiseen loppuun lost and found osioon
         
+    },
+    {
+        id: 40000000002,
+        question: "HUNGER STRIKES",
+        left: 6,
+        right: 20,
+        leftText: "Eat the frog",
+        rightText: "Keep on looking",
+        endingEdit: ", moment of loading"
     },
     {
         id: 5,
@@ -37,7 +46,8 @@ export default [
         left: 6,
         right: 20,
         leftText: "Eat the frog",
-        rightText: "Keep on looking"
+        rightText: "Keep on looking",
+        endingEdit: ", moment of blooming"
     },
     {
         id: 6,
