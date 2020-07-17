@@ -8,6 +8,8 @@ import './App.css';
 
 const dev = false
 
+const DEFAULT_PAUSE_MILLISECONDS = 5000
+
 const toNameSpellingFormat = (str) => {
     if (!str || str.length < 2) return str
     return str[0].toUpperCase() + str.substr(1, str.length).toLowerCase()
@@ -126,10 +128,11 @@ class App extends Component {
         this.toggleSoundFile()
         const question = questions.find(q => q.id === this.state.currentQuestionId)
         this.setState({isDisplayingReply: true, latestReply: question[`${leftRight}Text`]})
+        const replyDisplayDuration = question[`${leftRight}Duration`] || DEFAULT_PAUSE_MILLISECONDS
         setTimeout(() => {
             this.nextQuestion(leftRight)
             this.setState({isDisplayingReply: false})
-        }, dev ? 50 : 5000)
+        }, dev ? 50 : replyDisplayDuration)
     }
     
     isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning && !this.state.isDisplayingReply && !this.state.isQuestionExpanding

@@ -5,7 +5,9 @@ export default [
         left: 2,
         right: 2,
         leftText: "Yes",
-        rightText: "Wohoo"
+        rightText: "Wohoo",
+        leftDuration: 1000,
+        rightDuration: 3500
     },
     {
         id: 2,
