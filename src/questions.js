@@ -70,6 +70,7 @@ export default [
     {
         id: 8,
         question: "You found an ancient treasure but you need a key to open it",
+        style: "danger",
         left: 9
     },
     {
@@ -143,6 +144,7 @@ export default [
     {
         id: 17,
         question: "You used the wrong key. The treasure disappeared into thin air",
+        style: "danger",
         left: 18,
     },
     {
@@ -176,6 +178,7 @@ export default [
     {
         id: 21,
         question: "YOU CAN'T FIGHT THE SPIRITS",
+        style: "danger",
         left: 22
     },
     {
@@ -189,6 +192,7 @@ export default [
     {
         id: 23,
         question: "YOU CAN'T FIGHT THE SPIRITS",
+        style: "danger",
         left: 24
     },
     {
@@ -230,9 +234,9 @@ export default [
     },
     {
         id: 28,
-        question: "Press any button to say good bye",
-        leftText: "GOOD BYE",
-        rightText: "GOOD BYE",
+        question: "PRESS ANY BUTTON TO SAY GOOD BYE",
+        style: "danger",
+        leftText: "Press any button",
         left: 29,
         right: 29
     },
@@ -275,6 +279,7 @@ export default [
     {
         id: 33,
         question: "You found an ancient treasure but it's locked",
+        style: "danger",
         left: 34,
     },
     {
@@ -417,8 +422,8 @@ export default [
     {
         id: 50,
         question: "Push any button when the stone garden is ready",
-        leftText: "",
-        rightText: "",
+        style: "danger",
+        leftText: "Push any button",
         left: 51,
         right: 51
     },

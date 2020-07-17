@@ -116,6 +116,27 @@
     white-space: pre-line;
 }
 
+.danger {
+    font-family: "Eve", Courier, monospace;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: -2em;
+
+    color:black;
+    background-color: rgba(163, 147, 95, 0.6);
+
+    padding: 30px;
+    border-radius: 20px;
+    border: black dashed 14px;
+
+
+    max-width: 60vw;
+    white-space: pre-line;
+}
+
 .question {
     text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -134,6 +155,15 @@
 }
 
 .blinking{
+    animation:blinkingText 3s infinite;
+
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.blinking-start-text{
     position: absolute;
     bottom: 7em;
     color: RGB(245, 245, 199);

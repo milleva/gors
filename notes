@@ -1,16 +1,4 @@
-
-- biisin vaihto uuden kysymyksen mukana(?)
 - tee "danger bubble" (vrt speech-bubble)
 	- danger bubble josta KLIKATAAN pois: samanlainen blink-aniimaatio kuin "press .. to start game" (caps lockilla)
 	- ... josta mennään automaattisesti pois: normi teemaan sopiva teksti (caps lockilla)
 
-- ENDINGIT kun TELL A STORY => ... vs KISS => TELL A STORY => ...
-	-Ilman KISS:iä (ei "relation exploration")
-	-KISS:in kanssa ("relation exploration")
-
-
-
-- leftText: "Run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
-        rightText: "Embrace the thunder" // -> "moment of blooming" jokaiseen loppuun lost and found osioon
-
-- kaikki "displayReply" isollla alkukirjaoimella, muuten pienellä

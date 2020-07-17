@@ -9,6 +9,7 @@ import './App.css';
 const dev = false
 
 const toNameSpellingFormat = (str) => {
+    if (!str || str.length < 2) return str
     return str[0].toUpperCase() + str.substr(1, str.length).toLowerCase()
 }
 
@@ -158,7 +159,7 @@ class App extends Component {
                                     <span>
                                     {question.leftText && !this.state.isQuestionExpanding &&
                                     <div
-                                        className="button"
+                                        className={(question.style === "danger") && "blinking"}
                                         onClick={() => this.answerQuestion("left")}
                                         style={{...styles.answer}}>{"■ " + question.leftText.toLowerCase()}{!question.left && "(missing)"}</div>}
                                         {question.rightText && !this.state.isQuestionExpanding &&
@@ -174,7 +175,7 @@ class App extends Component {
                                 src={startScreenImage}
                                 alt="TAUSTA" className="background-image"/>
                             <div className="app-content">
-                                <h3 className="blinking">PRESS ANY BUTTON TO START GAME...</h3>
+                                <h3 className="blinking-start-text">PRESS ANY BUTTON TO START GAME...</h3>
                             </div>
                         </React.Fragment>}
                 </header>
