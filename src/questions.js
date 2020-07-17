@@ -6,8 +6,8 @@ export default [
         right: 2,
         leftText: "Yes",
         rightText: "Wohoo",
-        leftDuration: 1000,
-        rightDuration: 3500
+        leftDuration: 10000,
+        rightDuration: 10000
     },
     {
         id: 2,
@@ -15,14 +15,18 @@ export default [
         left: 3,
         right: 31,
         leftText: "Left",
-        rightText: "Right"
+        rightText: "Right",
+        leftDuration: 20000,
+        rightDuration: 20000
     },
     {
         id: 3,
         left: 4,
         right: 8,
         leftText: "Check the forest",
-        rightText: "Look into the fountain"
+        rightText: "Look into the fountain",
+        leftDuration: 25000,
+        rightDuration: 20000
     },
     {
         id: 4,
@@ -31,7 +35,8 @@ export default [
         right: 5,
         leftText: "Run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
         rightText: "Embrace the thunder", // -> "moment of blooming" jokaiseen loppuun lost and found osioon
-        
+        leftDuration: 40000,
+        rightDuration: 37000
     },
     {
         id: 40000000002,
@@ -40,7 +45,9 @@ export default [
         right: 20,
         leftText: "Eat the frog",
         rightText: "Keep on looking",
-        endingEdit: ", moment of loading"
+        endingEdit: ", moment of loading",
+        leftDuration: 38000,
+        rightDuration: 60000
     },
     {
         id: 5,
@@ -49,14 +56,18 @@ export default [
         right: 20,
         leftText: "Eat the frog",
         rightText: "Keep on looking",
-        endingEdit: ", moment of blooming"
+        endingEdit: ", moment of blooming",
+        leftDuration: 38000,
+        rightDuration: null
     },
     {
         id: 6,
         left: 7,
         right: 30,
         leftText: "Help Thalamis",
-        rightText: "Continue with Thalatta"
+        rightText: "Continue with Thalatta",
+        leftDuration: 60000,
+        rightDuration: 27000
     },
     {
         id: 7,
@@ -71,6 +82,7 @@ export default [
     
     {
         id: 8,
+        duration: 20000,
         question: "You found an ancient treasure but you need a key to open it",
         style: "danger",
         left: 9
@@ -80,14 +92,18 @@ export default [
         left: 10,
         right: 12,
         leftText: "Jumps and turns",
-        rightText: "SWING AND FLY"
+        rightText: "Swing and fly",
+        leftDuration: 60000,
+        rightDuration: 60000
     },
     {
         id: 10,
         left: 11,
         right: 26,
         leftText: "VENTURE THE ENDLESS DESERT",
-        rightText: "STICK TOGETHER"
+        rightText: "STICK TOGETHER",
+        leftDuration: null,
+        rightDuration: 45000
     },
     {
         id: 11,
@@ -106,7 +122,9 @@ export default [
         leftText: "NO, I WANT TO GO TO THE MOUNTAIN",
         rightText: "YES PLEASE",
         left: 13,
-        right: 14
+        right: 14,
+        leftDuration: 70000,
+        rightDuration: 25000
     },
     {
         id: 13,
@@ -123,7 +141,9 @@ export default [
         leftText: "LEVEL UP",
         rightText: "SEARCH FOR THE TREASURE KEY",
         left: 15,
-        right: 16
+        right: 16,
+        leftDuration: 53000,
+        rightDuration: 38000
     },
     {
         id: 15,
@@ -141,7 +161,9 @@ export default [
         leftText: "MEDALLION",
         rightText: "ROLLING SPIN",
         left: 17,
-        right: 19
+        right: 19,
+        leftDuration: 20000,
+        rightDuration: 45000
     },
     {
         id: 17,
@@ -172,10 +194,12 @@ export default [
     {
         id: 20,
         question: "You got trapped and the spirits here are hungry",
-        leftText: "FIGHT THEM",
+        leftText: "FIGHT THE SPIRITS",
         rightText: "SACRIFICE A SOUL",
         left: 21,
-        right: 25
+        right: 25,
+        leftDuration: 7000,
+        rightDuration: 45000
     },
     {
         id: 21,
@@ -186,10 +210,12 @@ export default [
     {
         id: 22,
         question: "You got trapped and the spirits here are hungry",
-        leftText: "FIGHT THEM",
+        leftText: "FIGHT THE SPIRITS",
         rightText: "SACRIFICE A SOUL",
         left: 23,
-        right: 25
+        right: 25,
+        leftDuration: 13000,
+        rightDuration: 45000
     },
     {
         id: 23,
@@ -222,7 +248,9 @@ export default [
         leftText: "GORS",
         rightText: "ETERNAL HELLO",
         left: 27,
-        right: 28
+        right: 28,
+        leftDuration: 50000,
+        rightDuration: 2000
     },
     {
         id: 27,
@@ -268,7 +296,9 @@ export default [
         leftText: "Take a Mountain walk",
         rightText: "Explore the woods",
         left: 32,
-        right: 48
+        right: 48,
+        leftDuration: 20000,
+        rightDuration: 30000
     },
     {
         id: 32,
@@ -276,10 +306,13 @@ export default [
         leftText: "Pay the fee",
         rightText: "Tell them they can't own the mountain",
         left: 40,
-        right: 33
+        right: 33,
+        leftDuration: 35000,
+        rightDuration: 13000
     },
     {
         id: 33,
+        duration: 20000,
         question: "You found an ancient treasure but it's locked",
         style: "danger",
         left: 34,
@@ -290,7 +323,9 @@ export default [
         leftText: "Snake hole",
         rightText: "Spider nest",
         left: 35,
-        right: 36
+        right: 36,
+        leftDuration: 130000,
+        rightDuration: 50000
     },
     {
         id: 35,
@@ -308,9 +343,11 @@ export default [
         "set free the Mountain Spirit. It's very grateful " +
         "of your actions and gives you one wish.",
         leftText: "Bag of Salt",
-        rightText: "Cup of Tea",
+        rightText: "Cup of Water",
         left: 37,
-        right: 39
+        right: 39,
+        leftDuration: 30000,
+        rightDuration: 60000
     },
     {
         id: 37,
@@ -345,7 +382,9 @@ export default [
         leftText: "Kiss",
         rightText: "Tell a story",
         left: 41,
-        right: 43
+        right: 43,
+        leftDuration: 35000,
+        rightDuration: 25000
     },
     {
         id: 41,
@@ -353,7 +392,9 @@ export default [
         rightText: "Tell a story",
         left: 42,
         right: 43,
-        endingEdit: ", relation exploration"
+        endingEdit: ", relation exploration",
+        leftDuration: 30000,
+        rightDuration: null
     },
     {
         id: 42,
@@ -370,14 +411,18 @@ export default [
         leftText: "Add salt",
         rightText: "Pass the salt",
         left: 44,
-        right: 47
+        right: 47,
+        leftDuration: 38000,
+        rightDuration: 40000
     },
     {
         id: 44,
         leftText: "Add salt",
         rightText: "Pass the salt",
         left: 46,
-        right: 47
+        right: 47,
+        leftDuration: 50000,
+        rightDuration: 40000
     },
     {
         id: 45, //POISTETTU
@@ -412,10 +457,14 @@ export default [
         leftText: "where do we need to go?",
         rightText: "where are we?",
         left: 49,
-        right: 58
+        right: 58,
+        leftDuration: 3000,
+        rightDuration: 3000
     },
     {
         id: 49,
+        duration: 25000,
+        duration: 25000,
         question: "Before I answer help me with the stone garden. " +
         "someone has destroyed it.",
         style: "speech-bubble",
@@ -427,10 +476,13 @@ export default [
         style: "danger",
         leftText: "Push any button",
         left: 51,
-        right: 51
+        right: 51,
+        leftDuration: 15000,
+        rightDuration: 15000
     },
     {
         id: 51,
+        duration: 10000,
         question: "Ahh.. Thank you, you kind creatures. I've heard" +
         "the Sandlands are worth a visit. But be cautious!",
         style: "speech-bubble",
@@ -441,7 +493,9 @@ export default [
         leftText: "Venture the Sandlands",
         rightText: "Level up",
         left: 53,
-        right: 54
+        right: 54,
+        leftDuration: 25000,
+        rightDuration: 30000
     },
     {
         id: 53,
@@ -458,7 +512,9 @@ export default [
         leftText: "Venture the Sandlands",
         rightText: "Bonus Game",
         left: 55,
-        right: 56
+        right: 56,
+        leftDuration: 70000,
+        rightDuration: 30000
     },
     {
         id: 55,
@@ -475,7 +531,9 @@ export default [
         leftText: "Venture the Sandlands",
         rightText: "End the day",
         left: 57,
-        right: 62
+        right: 62,
+        leftDuration: 45000,
+        rightDuration: 70000
     },
     {
         id: 57,
@@ -491,6 +549,7 @@ export default [
     },
     {
         id: 58,
+        duration: 13000,
         question: "Mmm... We are in a time tunnel. " +
         "It's quite complicated. Maybe you can understand " +
         "it if I refer it to food.",
@@ -502,7 +561,9 @@ export default [
         leftText: "Eat the frog",
         rightText: "Go back in time",
         left: 60,
-        right: 61
+        right: 61,
+        leftDuration: 35000,
+        rightDuration: 80000
     },
     {
         id: 60,
