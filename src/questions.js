@@ -268,7 +268,9 @@ export default [
         style: "danger",
         leftText: "Press any button",
         left: 29,
-        right: 29
+        right: 29,
+        leftDuration: 1,
+        rightDuration: 1
     },
     {
         id: 29,
@@ -476,8 +478,8 @@ export default [
         leftText: "Push any button",
         left: 51,
         right: 51,
-        leftDuration: 15000,
-        rightDuration: 15000
+        leftDuration: 1,
+        rightDuration: 1
     },
     {
         id: 51,
