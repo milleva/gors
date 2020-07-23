@@ -464,7 +464,6 @@ export default [
     {
         id: 49,
         duration: 25000,
-        duration: 25000,
         question: "Before I answer help me with the stone garden. " +
         "someone has destroyed it.",
         style: "speech-bubble",

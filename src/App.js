@@ -95,7 +95,7 @@ class App extends Component {
             this.setState({isAutoLeftTimerRunning: true})
             setTimeout(() => {
                 if(this.state.isAutoLeftTimerRunning) this.nextQuestion("left")
-            }, dev ? 50 : 5000);
+            }, dev ? 50 : (question.duration || DEFAULT_PAUSE_MILLISECONDS));
         }
         this.setState({currentQuestionCharacterIndex: 1})
         if(question && question.id === 1) this.setState({endingEdit: ""})
