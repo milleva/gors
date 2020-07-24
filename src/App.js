@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import startScreenImage from "./images/bg5.jpeg"
 import backgroundImage from "./images/gors_bg.jpeg"
+import dangerBubble from "./images/danger_bubble.png"
 import questions from "./questions"
 import Sound from "react-sound"
 
@@ -156,15 +157,21 @@ class App extends Component {
                                 <h1 className="displayedReply">{toNameSpellingFormat(this.state.latestReply)}</h1> :
                                 <div className="app-content">
                                     {question.question &&
-                                    <h1 className={question.style || "title"}>
-                                        {displayedMainText.substring(0, this.state.currentQuestionCharacterIndex)}
-                                        </h1>}
+                                        <span>
+                                            {question.style === "danger" && <img style={{position: "absolute", left: "15.5em", top: "2em", width: 1300}} src={dangerBubble} alt=""/>}
+                                            <h1 className={question.style || "title"}>
+                                                {displayedMainText.substring(0, this.state.currentQuestionCharacterIndex)}
+                                            </h1>
+                                        </span>
+                                    }
                                     <span>
                                     {question.leftText && !this.state.isQuestionExpanding &&
                                     <div
                                         className={(question.style === "danger") && "blinking"}
                                         onClick={() => this.answerQuestion("left")}
-                                        style={{...styles.answer}}>{"■ " + question.leftText.toLowerCase()}{!question.left && "(missing)"}</div>}
+                                        style={{...styles.answer}}>
+                                        {"■ " + question.leftText.toLowerCase()}{!question.left && "(missing)"}
+                                    </div>}
                                         {question.rightText && !this.state.isQuestionExpanding &&
                                         <div
                                             className="button"

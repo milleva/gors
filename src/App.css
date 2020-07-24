@@ -125,12 +125,13 @@
     position: relative;
     top: -2em;
 
-    color:black;
-    background-color: rgba(163, 147, 95, 0.6);
+    color: gray;
+    text-shadow: -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 
     padding: 30px;
-    border-radius: 20px;
-    border: black dashed 14px;
 
 
     max-width: 60vw;

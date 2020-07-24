@@ -77,7 +77,7 @@ export default [
         "LOST AND FOUND: \n  route, frog, empowerement, poison, combo = gloves+fungi",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     
     {
@@ -113,7 +113,7 @@ export default [
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, separation",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     
     {
@@ -134,7 +134,7 @@ export default [
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, hunger, hangry friend",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 14,
@@ -153,7 +153,7 @@ export default [
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, freedom, lovely afternoon",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 16,
@@ -179,7 +179,7 @@ export default [
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, medallion, a ghost treasure",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 19,
@@ -189,7 +189,7 @@ export default [
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, medallion, ancient necessary",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 20,
@@ -231,7 +231,7 @@ export default [
         "LOST AND FOUND: \n  route, frog, food, spirits, dead end",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 25,
@@ -241,7 +241,7 @@ export default [
         "LOST AND FOUND: \n  route, frog, food, spirits, sorrow",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 26,
@@ -260,7 +260,7 @@ export default [
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, salt",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 28,
@@ -280,7 +280,7 @@ export default [
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, skill of precence",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 30,
@@ -290,7 +290,7 @@ export default [
         "LOST AND FOUND: \n  route, frog, empowerement, potion, deadly fingers",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     
     {
@@ -337,7 +337,7 @@ export default [
         "LOST AND FOUND: \n  route, ''freedom'', fear, balance ",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 36,
@@ -367,7 +367,7 @@ export default [
         "LOST AND FOUND: \n  route, ''freedom'', mountain spirit, (endless end), water",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 39,
@@ -377,7 +377,7 @@ export default [
         "LOST AND FOUND: \n  route, ''freedom'', mountain spirit, spiritual enlightenment",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 40,
@@ -406,7 +406,7 @@ export default [
         "LOST AND FOUND: \n  route, mountain ticket, theft, deadly things",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 43,
@@ -441,7 +441,7 @@ export default [
         "LOST AND FOUND: \n  route, mountain ticket, memories, bruises",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 47,
@@ -451,7 +451,7 @@ export default [
         "LOST AND FOUND: \n  route, mountain ticket, memories, ease",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 48,
@@ -506,7 +506,7 @@ export default [
         "LOST AND FOUND: \n  route, business, hope, recklessness",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 54,
@@ -525,7 +525,7 @@ export default [
         "LOST AND FOUND: \n  route, business, growth, unforgettable dance",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 56,
@@ -546,7 +546,7 @@ export default [
         "unforgettable dance",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 58,
@@ -574,7 +574,7 @@ export default [
         "LOST AND FOUND: \n route, frog, knowledge, poison",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 61,
@@ -584,7 +584,7 @@ export default [
         "LOST AND FOUND: \n route, frog, knowledge, shape of time",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     },
     {
         id: 62,
@@ -595,6 +595,6 @@ export default [
         "lifting one another up for their growth through noticing their qualities and skills while also doing something meaningful together",
         left: 1,
         right: 1,
-        leftText: "OK"
+        duration: 1000000
     }
 ]
