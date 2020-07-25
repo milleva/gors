@@ -7,7 +7,7 @@ import Sound from "react-sound"
 
 import './App.css';
 
-const dev = false
+const dev = true
 
 const DEFAULT_PAUSE_MILLISECONDS = 5000
 const INITIAL_GAME_STARTING_PAUSE_MILLISECONDS = 15000
@@ -45,10 +45,10 @@ class App extends Component {
     onKeyPressed(e) {
         console.log(e.keyCode);
         if (!this.state.gameStarted) {
-            this.setState({gameStarted: true, isShowingBackgroundOnly: true})
+            this.setState({isShowingBackgroundOnly: true})
             setTimeout(
                 () => {
-                    this.setState({isShowingBackgroundOnly: false})
+                    this.setState({isShowingBackgroundOnly: false, gameStarted: true})
                     this.startExpandingQuestion(questions.find(q => q.id === this.state.currentQuestionId))
                 },
                 INITIAL_GAME_STARTING_PAUSE_MILLISECONDS)
@@ -142,7 +142,7 @@ class App extends Component {
         }, dev ? 50 : replyDisplayDuration)
     }
     
-    isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning && !this.state.isDisplayingReply && !this.state.isQuestionExpanding
+        isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning && !this.state.isDisplayingReply && !this.state.isQuestionExpanding
     
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
@@ -159,19 +159,18 @@ class App extends Component {
                     {this.state.gameStarted ?
                         <React.Fragment>
                             <img src={backgroundImage} alt="TAUSTA" className="background-image"/>
-                            {!this.state.isShowingBackgroundOnly &&
-                                (this.state.isDisplayingReply ?
-                                <h1 className="displayedReply">{toNameSpellingFormat(this.state.latestReply)}</h1> :
-                                <div className="app-content">
-                                    {question.question &&
-                                    <span>
+                            (this.state.isDisplayingReply ?
+                            <h1 className="displayedReply">{toNameSpellingFormat(this.state.latestReply)}</h1> :
+                            <div className="app-content">
+                                {question.question &&
+                                <span>
                                             {question.style === "danger" && <img style={{position: "absolute", left: "15.5em", top: "2em", width: 1300}} src={dangerBubble} alt=""/>}
-                                        <h1 className={question.style || "title"}>
+                                    <h1 className={question.style || "title"}>
                                                 {displayedMainText.substring(0, this.state.currentQuestionCharacterIndex)}
                                             </h1>
                                         </span>
-                                    }
-                                    <span>
+                                }
+                                <span>
                                     {question.leftText && !this.state.isQuestionExpanding &&
                                     <div
                                         className={(question.style === "danger") && "blinking"}
@@ -179,20 +178,19 @@ class App extends Component {
                                         style={{...styles.answer}}>
                                         {"■ " + question.leftText.toLowerCase()}{!question.left && "(missing)"}
                                     </div>}
-                                        {question.rightText && !this.state.isQuestionExpanding &&
-                                        <div
-                                            className="button"
-                                            onClick={() => this.answerQuestion("right")}
-                                            style={{...styles.answer}}>{"▴ " + question.rightText.toLowerCase()}{!question.right && "(missing)"}</div>}
+                                    {question.rightText && !this.state.isQuestionExpanding &&
+                                    <div
+                                        className="button"
+                                        onClick={() => this.answerQuestion("right")}
+                                        style={{...styles.answer}}>{"▴ " + question.rightText.toLowerCase()}{!question.right && "(missing)"}</div>}
           </span>
-                                </div>)}
-                        </React.Fragment> :
+                            </div>)                        </React.Fragment> :
                         <React.Fragment>
                             <img
                                 src={startScreenImage}
                                 alt="TAUSTA" className="background-image"/>
                             <div className="app-content">
-                                <h3 className="blinking-start-text">PRESS ANY BUTTON TO START GAME...</h3>
+                                {!this.state.isShowingBackgroundOnly && <h3 className="blinking-start-text">PRESS ANY BUTTON TO START GAME...</h3>}
                             </div>
                         </React.Fragment>}
                 </header>
