@@ -100,7 +100,7 @@ export default [
         id: 10,
         left: 11,
         right: 26,
-        leftText: "VENTURE THE ENDLESS DESERT",
+        leftText: "VENTURE THE SANDLANDS",
         rightText: "STICK TOGETHER",
         leftDuration: null,
         rightDuration: 45000
@@ -336,7 +336,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, ''freedom'', fear, balance ",
+        "LOST AND FOUND: \n  route, question of ownership, fear, balance ",
         left: 1,
         right: 1,
         duration: 1000000
@@ -357,7 +357,7 @@ export default [
         id: 37,
         question: "What a nice wish but unfortunately " +
         "also the one wish I can't execute. Here's water, " +
-        "you will need it when you find the saltbag.",
+        "you will need it when you find the salt.",
         style: "speech-bubble",
         left: 38
     },
@@ -366,7 +366,7 @@ export default [
         style: "game-over",
         question: "GAME OCEAN\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, ''freedom'', mountain spirit, (endless end), water",
+        "LOST AND FOUND: \n  route, question of ownership, mountain spirit, (endless end), water",
         left: 1,
         right: 1,
         duration: 1000000
@@ -376,7 +376,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, ''freedom'', mountain spirit, spiritual enlightenment",
+        "LOST AND FOUND: \n  route, question of ownership, mountain spirit, spiritual enlightenment",
         left: 1,
         right: 1,
         duration: 1000000
@@ -487,7 +487,7 @@ export default [
         id: 51,
         duration: 10000,
         question: "Ahh.. Thank you, you kind creatures. I've heard" +
-        "the Sandlands are worth a visit. But be cautious!",
+        " the Sandlands are worth a visit. But be cautious!",
         style: "speech-bubble",
         left: 52
     },
