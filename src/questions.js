@@ -198,14 +198,15 @@ export default [
         rightText: "SACRIFICE A SOUL",
         left: 21,
         right: 25,
-        leftDuration: 7000,
+        leftDuration: 3000,
         rightDuration: 45000
     },
     {
         id: 21,
         question: "YOU CAN'T FIGHT THE SPIRITS",
         style: "danger",
-        left: 22
+        left: 22,
+        duration: 7000
     },
     {
         id: 22,
@@ -214,14 +215,15 @@ export default [
         rightText: "SACRIFICE A SOUL",
         left: 23,
         right: 25,
-        leftDuration: 13000,
+        leftDuration: 3000,
         rightDuration: 45000
     },
     {
         id: 23,
         question: "YOU CAN'T FIGHT THE SPIRITS",
         style: "danger",
-        left: 24
+        left: 24,
+        duration: 13000
     },
     {
         id: 24,
@@ -264,9 +266,9 @@ export default [
     },
     {
         id: 28,
-        question: "PRESS ANY BUTTON TO SAY GOOD BYE",
+        question: "ETERNAL HELLO",
         style: "danger",
-        leftText: "Press any button",
+        leftText: "Press any button to say good bye",
         left: 29,
         right: 29,
         leftDuration: 1,

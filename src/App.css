@@ -36,7 +36,7 @@
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    text-align: left;
+    text-align: center;
     position: relative;
     top: -2em;
     text-shadow: -1px -1px 0 #000,
@@ -63,7 +63,7 @@
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    text-align: left;
+    text-align: center;
     position: relative;
     text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -101,7 +101,7 @@
     font-family: "Eve", Courier, monospace;
     letter-spacing: 1px;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
     position: relative;
     top: -2em;
 

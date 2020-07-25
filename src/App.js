@@ -7,7 +7,7 @@ import Sound from "react-sound"
 
 import './App.css';
 
-const dev = true
+const dev = false
 
 const DEFAULT_PAUSE_MILLISECONDS = 5000
 const INITIAL_GAME_STARTING_PAUSE_MILLISECONDS = 15000
@@ -159,32 +159,33 @@ class App extends Component {
                     {this.state.gameStarted ?
                         <React.Fragment>
                             <img src={backgroundImage} alt="TAUSTA" className="background-image"/>
-                            (this.state.isDisplayingReply ?
-                            <h1 className="displayedReply">{toNameSpellingFormat(this.state.latestReply)}</h1> :
-                            <div className="app-content">
-                                {question.question &&
-                                <span>
+                            {this.state.isDisplayingReply ?
+                                <h1 className="displayedReply">{toNameSpellingFormat(this.state.latestReply)}</h1> :
+                                <div className="app-content">
+                                    {question.question &&
+                                    <span>
                                             {question.style === "danger" && <img style={{position: "absolute", left: "15.5em", top: "2em", width: 1300}} src={dangerBubble} alt=""/>}
-                                    <h1 className={question.style || "title"}>
+                                        <h1 className={question.style || "title"}>
                                                 {displayedMainText.substring(0, this.state.currentQuestionCharacterIndex)}
                                             </h1>
                                         </span>
-                                }
-                                <span>
+                                    }
+                                    <span>
                                     {question.leftText && !this.state.isQuestionExpanding &&
                                     <div
                                         className={(question.style === "danger") && "blinking"}
                                         onClick={() => this.answerQuestion("left")}
                                         style={{...styles.answer}}>
-                                        {"■ " + question.leftText.toLowerCase()}{!question.left && "(missing)"}
+                                        {question.style !== "danger" && "■ "}
+                                        {question.leftText.toLowerCase()}{!question.left && "(missing)"}
                                     </div>}
-                                    {question.rightText && !this.state.isQuestionExpanding &&
-                                    <div
-                                        className="button"
-                                        onClick={() => this.answerQuestion("right")}
-                                        style={{...styles.answer}}>{"▴ " + question.rightText.toLowerCase()}{!question.right && "(missing)"}</div>}
+                                        {question.rightText && !this.state.isQuestionExpanding &&
+                                        <div
+                                            className="button"
+                                            onClick={() => this.answerQuestion("right")}
+                                            style={{...styles.answer}}>{"▴ " + question.rightText.toLowerCase()}{!question.right && "(missing)"}</div>}
           </span>
-                            </div>)                        </React.Fragment> :
+                                </div>}                        </React.Fragment> :
                         <React.Fragment>
                             <img
                                 src={startScreenImage}
