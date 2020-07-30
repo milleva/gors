@@ -17,21 +17,23 @@ const toNameSpellingFormat = (str) => {
     return str[0].toUpperCase() + str.substr(1, str.length).toLowerCase()
 }
 
+const initialAppState = {
+    gameStarted: false,
+    currentQuestionId: 1,
+    isAutoLeftTimerRunning: false,
+    isQuestionExpanding: false,
+    currentQuestionCharacterIndex: 1,
+    isDisplayingReply: false,
+    latestReply: "",
+    soundFile: 1,
+    endingEdit: "",
+    isShowingBackgroundOnly: false
+}
+
 class App extends Component {
     constructor() {
         super();
-        this.state = {
-            gameStarted: false,
-            currentQuestionId: 1,
-            isAutoLeftTimerRunning: false,
-            isQuestionExpanding: false,
-            currentQuestionCharacterIndex: 1,
-            isDisplayingReply: false,
-            latestReply: "",
-            soundFile: 1,
-            endingEdit: "",
-            isShowingBackgroundOnly: false
-        }
+        this.state = initialAppState
     }
     
     componentWillMount() {
@@ -44,12 +46,16 @@ class App extends Component {
     
     onKeyPressed(e) {
         console.log(e.keyCode);
-        if (!this.state.gameStarted) {
+        if (e.keyCode === 82) {
+            this.setState(initialAppState)
+        } else if (!this.state.gameStarted) {
             this.setState({isShowingBackgroundOnly: true})
             setTimeout(
                 () => {
-                    this.setState({isShowingBackgroundOnly: false, gameStarted: true})
-                    this.startExpandingQuestion(questions.find(q => q.id === this.state.currentQuestionId))
+                    if(this.state.isShowingBackgroundOnly) {
+                        this.setState({isShowingBackgroundOnly: false, gameStarted: true})
+                        this.startExpandingQuestion(questions.find(q => q.id === this.state.currentQuestionId))
+                    }
                 },
                 INITIAL_GAME_STARTING_PAUSE_MILLISECONDS)
         } else {
@@ -57,10 +63,6 @@ class App extends Component {
                 case 78:
                     if(this.isGameInputAllowed()) this.answerQuestion("right")
                     console.log("right");
-                    break;
-                case 82:
-                    this.setState({gameStarted: false, currentQuestionId: 1})
-                    console.log("restart");
                     break;
                 case 89:
                     console.log("left")
@@ -142,7 +144,10 @@ class App extends Component {
         }, dev ? 50 : replyDisplayDuration)
     }
     
-        isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning && !this.state.isDisplayingReply && !this.state.isQuestionExpanding
+        isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning
+            && !this.state.isDisplayingReply
+            && !this.state.isQuestionExpanding
+            && !this.state.isShowingBackgroundOnly
     
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
