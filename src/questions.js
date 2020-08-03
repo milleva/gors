@@ -26,7 +26,7 @@ export default [
         leftText: "Check the forest",
         rightText: "Look into the fountain",
         leftDuration: 25000,
-        rightDuration: 20000
+        rightDuration: 25000
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ export default [
         right: 20,
         leftText: "Eat the frog",
         rightText: "Keep on looking",
-        endingEdit: ", moment of loading",
+        endingEdit: "",
         leftDuration: 38000,
         rightDuration: 60000
     },
@@ -56,9 +56,9 @@ export default [
         right: 20,
         leftText: "Eat the frog",
         rightText: "Keep on looking",
-        endingEdit: ", moment of blooming",
+        endingEdit: "",
         leftDuration: 38000,
-        rightDuration: null
+        rightDuration: 60000
     },
     {
         id: 6,
@@ -74,7 +74,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, frog, empowerement, poison, combo = gloves+fungi",
+        "LOST AND FOUND: \n  route, frog, moment of loading, poison, combo = gloves+fungi",
         left: 1,
         right: 1,
         duration: 1000000
@@ -102,7 +102,7 @@ export default [
         right: 26,
         leftText: "VENTURE THE SANDLANDS",
         rightText: "STICK TOGETHER",
-        leftDuration: null,
+        leftDuration: 45000,
         rightDuration: 45000
     },
     {
@@ -148,9 +148,9 @@ export default [
     {
         id: 15,
         style: "game-over",
-        question: "YOU FOUND AN ENDINGR\n\n" +
+        question: "YOU FOUND AN ENDING\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, freedom, lovely afternoon",
+        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, freedom",
         left: 1,
         right: 1,
         duration: 1000000
@@ -176,7 +176,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, medallion, a ghost treasure",
+        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, a ghost treasure",
         left: 1,
         right: 1,
         duration: 1000000
@@ -186,7 +186,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, medallion, ancient necessary",
+        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ancient necessary",
         left: 1,
         right: 1,
         duration: 1000000
@@ -230,7 +230,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, frog, food, spirits, dead end",
+        "LOST AND FOUND: \n  route, moment of loading, frog, food, spirits, dead end",
         left: 1,
         right: 1,
         duration: 1000000
@@ -240,7 +240,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, frog, food, spirits, sorrow",
+        "LOST AND FOUND: \n  route, moment of loading, frog, food, spirits, sorrow",
         left: 1,
         right: 1,
         duration: 1000000
@@ -289,7 +289,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, frog, empowerement, potion, deadly fingers",
+        "LOST AND FOUND: \n  route, frog, moment of loading, potion, deadly fingers",
         left: 1,
         right: 1,
         duration: 1000000
@@ -366,7 +366,7 @@ export default [
         style: "game-over",
         question: "GAME OCEAN\n\n" +
         "BLIDS:\n x\n" +
-        "LOST AND FOUND: \n  route, question of ownership, mountain spirit, (endless end), water",
+        "LOST AND FOUND: \n  route, question of ownership, mountain spirit, discontent, water",
         left: 1,
         right: 1,
         duration: 1000000

@@ -10,7 +10,9 @@ import './App.css';
 const dev = false
 
 const DEFAULT_PAUSE_MILLISECONDS = 5000
-const INITIAL_GAME_STARTING_PAUSE_MILLISECONDS = 15000
+const INITIAL_GAME_STARTING_PAUSE_MILLISECONDS = 20000
+//20sec (3.8.2020)
+
 
 const toNameSpellingFormat = (str) => {
     if (!str || str.length < 2) return str
@@ -58,15 +60,15 @@ class App extends Component {
                     }
                 },
                 INITIAL_GAME_STARTING_PAUSE_MILLISECONDS)
-        } else {
+        } else if (this.isGameInputAllowed()) {
             switch (e.keyCode) {
-                case 78:
-                    if(this.isGameInputAllowed()) this.answerQuestion("right")
+                case 78://78 = 'n'
+                    this.answerQuestion("right")
                     console.log("right");
                     break;
-                case 89:
+                case 89://89 = 'y'
+                    this.answerQuestion("left")
                     console.log("left")
-                    if(this.isGameInputAllowed()) this.answerQuestion("left")
                     break
                 default:
                     break
