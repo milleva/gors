@@ -73,7 +73,7 @@ export default [
         id: 7,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 6\n" +
         "LOST AND FOUND: \n  route, frog, moment of loading, poison, combo = gloves+fungi",
         left: 1,
         right: 1,
@@ -109,7 +109,7 @@ export default [
         id: 11,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, separation",
         left: 1,
         right: 1,
@@ -130,7 +130,7 @@ export default [
         id: 13,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 16\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, hunger, hangry friend",
         left: 1,
         right: 1,
@@ -149,7 +149,7 @@ export default [
         id: 15,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 0\n" +
         "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, freedom",
         left: 1,
         right: 1,
@@ -175,7 +175,7 @@ export default [
         id: 18,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 10\n" +
         "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, a ghost treasure",
         left: 1,
         right: 1,
@@ -185,7 +185,7 @@ export default [
         id: 19,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 10\n" +
         "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ancient necessary",
         left: 1,
         right: 1,
@@ -229,7 +229,7 @@ export default [
         id: 24,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 10\n" +
         "LOST AND FOUND: \n  route, moment of loading, frog, food, spirits, dead end",
         left: 1,
         right: 1,
@@ -239,7 +239,7 @@ export default [
         id: 25,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 13\n" +
         "LOST AND FOUND: \n  route, moment of loading, frog, food, spirits, sorrow",
         left: 1,
         right: 1,
@@ -258,7 +258,7 @@ export default [
         id: 27,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 3\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, salt",
         left: 1,
         right: 1,
@@ -278,7 +278,7 @@ export default [
         id: 29,
         style: "game-over",
         question: "GOOD BYE\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 3\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, skill of precence",
         left: 1,
         right: 1,
@@ -288,7 +288,7 @@ export default [
         id: 30,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 16\n" +
         "LOST AND FOUND: \n  route, frog, moment of loading, potion, deadly fingers",
         left: 1,
         right: 1,
@@ -335,7 +335,7 @@ export default [
         id: 35,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 12\n" +
         "LOST AND FOUND: \n  route, question of ownership, fear, balance ",
         left: 1,
         right: 1,
@@ -365,7 +365,7 @@ export default [
         id: 38,
         style: "game-over",
         question: "GAME OCEAN\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, question of ownership, mountain spirit, discontent, water",
         left: 1,
         right: 1,
@@ -375,7 +375,7 @@ export default [
         id: 39,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 14\n" +
         "LOST AND FOUND: \n  route, question of ownership, mountain spirit, spiritual enlightenment",
         left: 1,
         right: 1,
@@ -404,7 +404,7 @@ export default [
         id: 42,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 6\n" +
         "LOST AND FOUND: \n  route, mountain ticket, theft, deadly things",
         left: 1,
         right: 1,
@@ -439,7 +439,7 @@ export default [
         id: 46,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, mountain ticket, memories, bruises",
         left: 1,
         right: 1,
@@ -449,7 +449,7 @@ export default [
         id: 47,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "BLIDS:\n x\n" +
+        "BLIDS:\n 14\n" +
         "LOST AND FOUND: \n  route, mountain ticket, memories, ease",
         left: 1,
         right: 1,
