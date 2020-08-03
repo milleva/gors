@@ -10,6 +10,7 @@ import './App.css';
 const dev = false
 
 const DEFAULT_PAUSE_MILLISECONDS = 5000
+const INITIAL_GAME_START_PREVENTION_DURATION = 10000
 const INITIAL_GAME_STARTING_PAUSE_MILLISECONDS = 20000
 //20sec (3.8.2020)
 
@@ -29,7 +30,7 @@ const initialAppState = {
     latestReply: "",
     soundFile: 1,
     endingEdit: "",
-    isShowingBackgroundOnly: false
+    isShowingBackgroundOnly: true
 }
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
     
     componentWillMount() {
         document.addEventListener("keydown", this.onKeyPressed.bind(this));
+        setTimeout(() => this.setState({isShowingBackgroundOnly: false}), INITIAL_GAME_START_PREVENTION_DURATION)
     }
     
     componentWillUnmount() {
@@ -48,9 +50,13 @@ class App extends Component {
     
     onKeyPressed(e) {
         console.log(e.keyCode);
+        const isGameInputAllowed = (!this.state.isAutoLeftTimerRunning
+            && !this.state.isDisplayingReply
+            && !this.state.isQuestionExpanding
+            && !this.state.isShowingBackgroundOnly)
         if (e.keyCode === 82) {
             this.setState(initialAppState)
-        } else if (!this.state.gameStarted) {
+        } else if (!this.state.gameStarted && !this.state.isShowingBackgroundOnly) {
             this.setState({isShowingBackgroundOnly: true})
             setTimeout(
                 () => {
@@ -60,7 +66,7 @@ class App extends Component {
                     }
                 },
                 INITIAL_GAME_STARTING_PAUSE_MILLISECONDS)
-        } else if (this.isGameInputAllowed()) {
+        } else if (isGameInputAllowed) {
             switch (e.keyCode) {
                 case 78://78 = 'n'
                     this.answerQuestion("right")
@@ -145,11 +151,6 @@ class App extends Component {
             this.setState({isDisplayingReply: false})
         }, dev ? 50 : replyDisplayDuration)
     }
-    
-        isGameInputAllowed = () => !this.state.isAutoLeftTimerRunning
-            && !this.state.isDisplayingReply
-            && !this.state.isQuestionExpanding
-            && !this.state.isShowingBackgroundOnly
     
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
