@@ -191,7 +191,7 @@ class App extends Component {
                                         <div
                                             className="button"
                                             onClick={() => this.answerQuestion("right")}
-                                            style={{...styles.answer}}>{"▴ " + question.rightText.toLowerCase()}{!question.right && "(missing)"}</div>}
+                                            style={{...styles.answer}}>{"▲ " + question.rightText.toLowerCase()}{!question.right && "(missing)"}</div>}
           </span>
                                 </div>}                        </React.Fragment> :
                         <React.Fragment>
