@@ -469,7 +469,7 @@ export default [
         id: 49,
         duration: 25000,
         question: "Before I answer help me with the stone garden. " +
-        "someone has destroyed it.",
+        "Someone has destroyed it.",
         style: "speech-bubble",
         left: 50
     },
@@ -477,11 +477,11 @@ export default [
         id: 50,
         question: "Push any button when the stone garden is ready",
         style: "danger",
-        leftText: "Push any button",
+        leftText: "...",
         left: 51,
         right: 51,
-        leftDuration: 1,
-        rightDuration: 1
+        leftDuration: 10000,
+        rightDuration: 10000
     },
     {
         id: 51,
