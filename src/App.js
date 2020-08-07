@@ -28,7 +28,7 @@ const initialAppState = {
     currentQuestionCharacterIndex: 1,
     isDisplayingReply: false,
     latestReply: "",
-    soundFile: 1,
+    soundFile: "",
     endingEdit: "",
     isShowingBackgroundOnly: true
 }
@@ -118,6 +118,7 @@ class App extends Component {
         if(question && question.id === 1) this.setState({endingEdit: ""})
         if(question && question.endingEdit) this.setState({endingEdit: question.endingEdit})
         if(question && question.question) this.startExpandingQuestion(question)
+        if(question && question.soundFile) this.setSoundFile(question.soundFile)
     }
     
     startExpandingQuestion = (question) => {
@@ -136,14 +137,18 @@ class App extends Component {
         }
     }
     
+    setSoundFile = (fileName) => {
+        this.setState({soundFile: fileName + ".wav"})
+    }
+    
     toggleSoundFile = () => {
         if (this.state.soundFile === 1) this.setState({soundFile: 2})
         else this.setState({soundFile: 1})
     }
     
     answerQuestion = (leftRight) => {
-        this.toggleSoundFile()
         const question = questions.find(q => q.id === this.state.currentQuestionId)
+        this.setSoundFile(question[`${leftRight}SoundFile`])
         this.setState({isDisplayingReply: true, latestReply: question[`${leftRight}Text`]})
         const replyDisplayDuration = question[`${leftRight}Duration`] || DEFAULT_PAUSE_MILLISECONDS
         setTimeout(() => {
@@ -160,7 +165,7 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                     <Sound
-                        url={`GORS_${this.state.soundFile}.wav`}
+                        url={this.state.soundFile}
                         playStatus={!dev && Sound.status.PLAYING}
                         loop={true}
                     />

@@ -7,7 +7,9 @@ export default [
         leftText: "Yes",
         rightText: "Wohoo",
         leftDuration: 10000,
-        rightDuration: 10000
+        rightDuration: 10000,
+        leftSoundFile: "Enter the World 12s",
+        rightSoundFile: "Enter the World 12s"
     },
     {
         id: 2,
@@ -36,7 +38,9 @@ export default [
         leftText: "Run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
         rightText: "Embrace the thunder", // -> "moment of blooming" jokaiseen loppuun lost and found osioon
         leftDuration: 40000,
-        rightDuration: 37000
+        rightDuration: 37000,
+        leftSoundFile: "Embrace the Thunder + Run to safety 40s",
+        rightSoundFile: "Embrace the Thunder + Run to safety 40s"
     },
     {
         id: 40000000002,
@@ -47,7 +51,8 @@ export default [
         rightText: "Keep on looking",
         endingEdit: "",
         leftDuration: 38000,
-        rightDuration: 60000
+        rightDuration: 60000,
+        leftSoundFile: "Eat the frog 40s"
     },
     {
         id: 5,
@@ -58,7 +63,8 @@ export default [
         rightText: "Keep on looking",
         endingEdit: "",
         leftDuration: 38000,
-        rightDuration: 60000
+        rightDuration: 60000,
+        leftSoundFile: "Eat the frog 40s"
     },
     {
         id: 6,
@@ -199,7 +205,8 @@ export default [
         left: 21,
         right: 25,
         leftDuration: 3000,
-        rightDuration: 45000
+        rightDuration: 45000,
+        leftSoundFile: "Fight the Spirits eka 7s"
     },
     {
         id: 21,
@@ -216,7 +223,9 @@ export default [
         left: 23,
         right: 25,
         leftDuration: 3000,
-        rightDuration: 45000
+        rightDuration: 45000,
+        leftSoundFile: "Fight the spirits toka 13s"
+        
     },
     {
         id: 23,
@@ -302,7 +311,8 @@ export default [
         left: 32,
         right: 48,
         leftDuration: 20000,
-        rightDuration: 30000
+        rightDuration: 30000,
+        rightSoundFile: "Explore the Woods 30s"
     },
     {
         id: 32,
@@ -351,7 +361,9 @@ export default [
         left: 37,
         right: 39,
         leftDuration: 30000,
-        rightDuration: 60000
+        rightDuration: 60000,
+        leftSoundFile: "Bag of Salt 30",
+        rightSoundFile: "Cup of water 1min 10s"
     },
     {
         id: 37,
@@ -417,7 +429,8 @@ export default [
         left: 44,
         right: 47,
         leftDuration: 38000,
-        rightDuration: 40000
+        rightDuration: 40000,
+        leftSoundFile: "Add_Salt_eka_48s"
     },
     {
         id: 44,
@@ -426,14 +439,11 @@ export default [
         left: 46,
         right: 47,
         leftDuration: 50000,
-        rightDuration: 40000
+        rightDuration: 40000,
+        leftSoundFile: "Add Salt toka 1min 5s"
     },
     {
         id: 45, //POISTETTU
-        leftText: "Add salt",
-        rightText: "Pass the salt",
-        left: 46,
-        right: 47
     },
     {
         id: 46,
@@ -517,7 +527,8 @@ export default [
         left: 55,
         right: 56,
         leftDuration: 70000,
-        rightDuration: 30000
+        rightDuration: 30000,
+        rightSoundFile: "Bonus Game31"
     },
     {
         id: 55,
@@ -566,7 +577,8 @@ export default [
         left: 60,
         right: 61,
         leftDuration: 35000,
-        rightDuration: 80000
+        rightDuration: 80000,
+        leftSoundFile: "Eat the frog 40s"
     },
     {
         id: 60,
