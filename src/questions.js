@@ -183,18 +183,14 @@ export default [
         question: "Open the ancient treasure with...",
         leftText: "medallion",
         rightText: "rolling spin",
-        left: 17,
+        left: 18,
         right: 1901,
-        leftDuration: 3000,
-        rightDuration: 3000
+        leftDuration: 50000,
+        rightDuration: 3000,
+        leftSoundFile: "Medallion_50s"
     },
     {
-        id: 17,
-        duration: "50000",
-        soundFile: "Medallion_50s",
-        question: "You used a wrong key. The treasure disappeared into thin air",
-        style: "danger",
-        left: 18,
+        id: 17 //POISTETTU
     },
     {
         id: 18,
@@ -285,7 +281,7 @@ export default [
     },
     {
         id: 26,
-        leftText: "GORS",
+        leftText: "gors",
         rightText: "eternal hello",
         left: 27,
         right: 28,
@@ -494,7 +490,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n" +
         "BLIDS:\n 9\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, memories, bruises",
+        "LOST AND FOUND: \n  route, mountain ticket, memories, relation exploration, bruises",
         left: 1,
         right: 1,
         duration: 1000000
@@ -537,6 +533,7 @@ export default [
         right: 51,
         leftDuration: 18000,
         rightDuration: 18000,
+        soundFile: "Stonegarden_&_Eternal_hello_LOOP",
         leftSoundFile: "SG_Ready_blank_18s",
         rightSoundFile: "SG_Ready_blank_18s"
     },

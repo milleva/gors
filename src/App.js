@@ -28,7 +28,7 @@ const initialAppState = {
     currentQuestionCharacterIndex: 1,
     isDisplayingReply: false,
     latestReply: "",
-    soundFile: "",
+    soundFile: "Stonegarden_&_Eternal_hello_LOOP",
     endingEdit: "",
     isShowingBackgroundOnly: true
 }
@@ -63,7 +63,6 @@ class App extends Component {
                 () => {
                     if(this.state.isShowingBackgroundOnly) {
                         this.setState({isShowingBackgroundOnly: false, gameStarted: true})
-                        this.setSoundFile("Enter_the_World_12s")
                         this.startExpandingQuestion(questions.find(q => q.id === this.state.currentQuestionId))
                     }
                 },
