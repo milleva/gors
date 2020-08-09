@@ -15,9 +15,9 @@ const INITIAL_GAME_STARTING_PAUSE_MILLISECONDS = 20000
 //20sec (3.8.2020)
 
 
-const toNameSpellingFormat = (str) => {
+const capitalizeFirstLetter = (str) => {
     if (!str || str.length < 2) return str
-    return str[0].toUpperCase() + str.substr(1, str.length).toLowerCase()
+    return str[0].toUpperCase() + str.substr(1, str.length)
 }
 
 const initialAppState = {
@@ -162,7 +162,6 @@ class App extends Component {
     render() {
         const question = questions.filter(q => q.id === this.state.currentQuestionId)[0]
         const displayedMainText = question.style === "game-over" ? question.question + this.state.endingEdit : question.question
-        console.log(displayedMainText)
         return (
             <div className="App">
                 <header className="App-header">
@@ -175,7 +174,7 @@ class App extends Component {
                         <React.Fragment>
                             <img src={backgroundImage} alt="TAUSTA" className="background-image"/>
                             {this.state.isDisplayingReply ?
-                                <h1 className="displayedReply">{toNameSpellingFormat(this.state.latestReply)}</h1> :
+                                <h1 className="displayedReply">{capitalizeFirstLetter(this.state.latestReply)}</h1> :
                                 <div className="app-content">
                                     {question.question &&
                                     <span>
