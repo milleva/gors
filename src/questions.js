@@ -17,7 +17,7 @@ export default [
         left: 3,
         right: 31,
         leftText: "left",
-        rightText: "light",
+        rightText: "right",
         leftDuration: 20000,
         rightDuration: 20000,
         leftSoundFile: "Left_20s",
@@ -185,14 +185,14 @@ export default [
         rightText: "rolling spin",
         left: 17,
         right: 1901,
-        leftDuration: 50000,
-        rightDuration: 3000,
-        leftSoundFile: "Medallion_50s",
-        rightSoundFile: "Rolling_spin_1min_25s"
+        leftDuration: 3000,
+        rightDuration: 3000
     },
     {
         id: 17,
-        question: "You used the wrong key. The treasure disappeared into thin air",
+        duration: "50000",
+        soundFile: "Medallion_50s",
+        question: "You used a wrong key. The treasure disappeared into thin air",
         style: "danger",
         left: 18,
     },
@@ -208,8 +208,9 @@ export default [
     },
     {
         id: 1901,
-        question: "You used the wrong key. The treasure disappeared into thin air",
+        question: "You used a wrong key. The treasure disappeared into thin air",
         style: "danger",
+        soundFile: "Rolling_spin_1min_25s",
         duration: 85000,
         left: 19,
     },
@@ -240,6 +241,7 @@ export default [
         question: "YOU CAN'T FIGHT THE SPIRITS",
         style: "danger",
         left: 22,
+        soundFile: "Fight_the_Spirits_eka_7s",
         duration: 7000
     },
     {
@@ -251,7 +253,6 @@ export default [
         right: 25,
         leftDuration: 3000,
         rightDuration: 45000,
-        leftSoundFile: "Fight_the_spirits_toka_13s",
         rightSoundFile: "Sacrifice_a_Soul_45s"
     },
     {
@@ -259,6 +260,7 @@ export default [
         question: "YOU CAN'T FIGHT THE SPIRITS",
         style: "danger",
         left: 24,
+        soundFile: "Fight_the_spirits_toka_13s",
         duration: 13000
     },
     {
