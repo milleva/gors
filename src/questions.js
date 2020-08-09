@@ -395,17 +395,18 @@ export default [
         rightText: "cup of Water",
         left: 37,
         right: 39,
-        leftDuration: 30000,
+        leftDuration: 3000,
         rightDuration: 60000,
         leftSoundFile: "Bag_of_Salt_30",
         rightSoundFile: "Cup_of_water_1min_10s"
     },
     {
         id: 37,
-        question: "What a nice wish but unfortunately " +
-        "also the one wish I can't execute. Here's water, " +
+        question: "I’m sorry but you have to find it yourselves. " +
+        "Here is water instead, " +
         "you will need it when you find the salt.",
         style: "speech-bubble",
+        duration: 30000,
         left: 38
     },
     {
