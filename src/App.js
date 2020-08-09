@@ -58,10 +58,12 @@ class App extends Component {
             this.setState(initialAppState)
         } else if (!this.state.gameStarted && !this.state.isShowingBackgroundOnly) {
             this.setState({isShowingBackgroundOnly: true})
+            this.setSoundFile("Start_the_Game_22s")
             setTimeout(
                 () => {
                     if(this.state.isShowingBackgroundOnly) {
                         this.setState({isShowingBackgroundOnly: false, gameStarted: true})
+                        this.setSoundFile("Enter_the_World_12s")
                         this.startExpandingQuestion(questions.find(q => q.id === this.state.currentQuestionId))
                     }
                 },
