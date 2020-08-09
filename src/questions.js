@@ -182,9 +182,9 @@ export default [
         leftText: "MEDALLION",
         rightText: "ROLLING SPIN",
         left: 17,
-        right: 19,
+        right: 1901,
         leftDuration: 20000,
-        rightDuration: 45000,
+        rightDuration: 3000,
         leftSoundFile: "Medallion_50s",
         rightSoundFile: "Rolling_spin_1min_25s"
     },
@@ -199,17 +199,24 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n 10\n" +
-        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, a ghost treasure",
+        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ancient treasure",
         left: 1,
         right: 1,
         duration: 1000000
+    },
+    {
+        id: 1901,
+        question: "You used the wrong key. The treasure disappeared into thin air",
+        style: "danger",
+        duration: 85000,
+        left: 19,
     },
     {
         id: 19,
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n 10\n" +
-        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ancient necessary",
+        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ghost treasure, balance",
         left: 1,
         right: 1,
         duration: 1000000
