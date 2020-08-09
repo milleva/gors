@@ -6,8 +6,8 @@ export default [
         right: 2,
         leftText: "yes",
         rightText: "wohoo",
-        leftDuration: 10000,
-        rightDuration: 10000,
+        leftDuration: 12000,
+        rightDuration: 12000,
         leftSoundFile: "Enter_the_World_12s",
         rightSoundFile: "Enter_the_World_12s"
     },
@@ -30,7 +30,7 @@ export default [
         leftText: "check the forest",
         rightText: "look into the fountain",
         leftDuration: 25000,
-        rightDuration: 25000,
+        rightDuration: 20000,
         leftSoundFile: "Tell_a_Story_&_check_the_forest_25s",
         rightSoundFile: "Fountain_&_Found_treasure(after_fountain)_20s"
     },
@@ -42,7 +42,7 @@ export default [
         leftText: "run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
         rightText: "embrace the thunder", // -> "moment of blooming" jokaiseen loppuun lost and found osioon
         leftDuration: 40000,
-        rightDuration: 37000,
+        rightDuration: 40000,
         leftSoundFile: "Embrace_the_Thunder_Run_to_safety_40s",
         rightSoundFile: "Embrace_the_Thunder_Run_to_safety_40s"
     },
@@ -54,7 +54,7 @@ export default [
         leftText: "eat the frog",
         rightText: "keep on looking",
         endingEdit: "",
-        leftDuration: 38000,
+        leftDuration: 40000,
         rightDuration: 60000,
         leftSoundFile: "Eat_the_frog_40s",
         rightSoundFile: "Keep_On_Looking_1min"
@@ -67,7 +67,7 @@ export default [
         leftText: "eat the frog",
         rightText: "keep on looking",
         endingEdit: "",
-        leftDuration: 38000,
+        leftDuration: 40000,
         rightDuration: 60000,
         rightSoundFile: "Keep_On_Looking_1min",
         leftSoundFile: "Eat_the_frog_40s"
@@ -78,8 +78,8 @@ export default [
         right: 30,
         leftText: "help Thalamis",
         rightText: "continue with Thalatta",
-        leftDuration: 60000,
-        rightDuration: 27000,
+        leftDuration: 51000,
+        rightDuration: 30000,
         rightSoundFile: "Give_a_Gift_&_Continue_with_Thalatta_30s",
         leftSoundFile: "Help_Thalamis_51s"
     },
@@ -108,7 +108,7 @@ export default [
         right: 12,
         leftText: "jumps and turns",
         rightText: "swing and fly",
-        leftDuration: 60000,
+        leftDuration: 61000,
         rightDuration: 60000,
         leftSoundFile: "Jump_and_Turns_1min_1s",
         rightSoundFile: "Swing_and_Fly_1min"
@@ -119,8 +119,8 @@ export default [
         right: 26,
         leftText: "venture the sandlands",
         rightText: "stick together",
-        leftDuration: 45000,
-        rightDuration: 45000,
+        leftDuration: 47000,
+        rightDuration: 46000,
         rightSoundFile: "Stick_Together_46s",
         leftSoundFile: "VTS_(after_jumps_and_turns)_47s"
     },
@@ -163,8 +163,8 @@ export default [
         rightText: "search for the treasure key",
         left: 15,
         right: 16,
-        leftDuration: 53000,
-        rightDuration: 38000,
+        leftDuration: 56000,
+        rightDuration: 42000,
         leftSoundFile: "Level_up_(after_piknik)_56s",
         rightSoundFile: "Search_for_treasure_Key_42s"
     },
@@ -185,7 +185,7 @@ export default [
         rightText: "rolling spin",
         left: 17,
         right: 1901,
-        leftDuration: 20000,
+        leftDuration: 50000,
         rightDuration: 3000,
         leftSoundFile: "Medallion_50s",
         rightSoundFile: "Rolling_spin_1min_25s"
@@ -339,7 +339,7 @@ export default [
         rightText: "explore the woods",
         left: 32,
         right: 48,
-        leftDuration: 20000,
+        leftDuration: 21000,
         rightDuration: 30000,
         rightSoundFile: "Explore_the_Woods_30s",
         leftSoundFile: "Mountainwalk_21s"
@@ -352,7 +352,7 @@ export default [
         left: 40,
         right: 33,
         leftDuration: 35000,
-        rightDuration: 13000,
+        rightDuration: 15000,
         leftSoundFile: "Pay_The_Fee_35s",
         rightSoundFile: "Tell_them_they_cant_own_the_mountain_15s"
     },
@@ -372,7 +372,7 @@ export default [
         left: 35,
         right: 36,
         leftDuration: 130000,
-        rightDuration: 50000,
+        rightDuration: 45000,
         leftSoundFile: "Snakehole_2min_10s",
         rightSoundFile: "Spidernest_45s"
     },
@@ -435,7 +435,7 @@ export default [
         rightText: "tell a story",
         left: 41,
         right: 43,
-        leftDuration: 35000,
+        leftDuration: 30000,
         rightDuration: 25000,
         leftSoundFile: "Kiss_30s",
         rightSoundFile: "Tell_a_Story_&_check_the_forest_25s"
@@ -468,7 +468,7 @@ export default [
         rightText: "pass the salt",
         left: 44,
         right: 47,
-        leftDuration: 38000,
+        leftDuration: 48000,
         rightDuration: 40000,
         leftSoundFile: "Add_Salt_eka_48s",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
@@ -479,7 +479,7 @@ export default [
         rightText: "pass the salt",
         left: 46,
         right: 47,
-        leftDuration: 50000,
+        leftDuration: 65000,
         rightDuration: 40000,
         leftSoundFile: "Add_Salt_toka_1min_5s",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
@@ -533,8 +533,8 @@ export default [
         leftText: "...",
         left: 51,
         right: 51,
-        leftDuration: 10000,
-        rightDuration: 10000,
+        leftDuration: 18000,
+        rightDuration: 18000,
         leftSoundFile: "SG_Ready_blank_18s",
         rightSoundFile: "SG_Ready_blank_18s"
     },
@@ -553,7 +553,7 @@ export default [
         left: 53,
         right: 54,
         leftDuration: 25000,
-        rightDuration: 30000,
+        rightDuration: 36000,
         rightSoundFile: "Level_Up_(after_visit_sandland_comment)_36s",
         leftSoundFile: "VTS_(after_stonegarden)_&_Have_a_picnic_25s"
     },
@@ -573,8 +573,8 @@ export default [
         rightText: "bonus Game",
         left: 55,
         right: 56,
-        leftDuration: 70000,
-        rightDuration: 30000,
+        leftDuration: 90000,
+        rightDuration: 31000,
         rightSoundFile: "Bonus_Game31",
         leftSoundFile: "VTS_(after_level_up)_VAARAfile_1min_30s"
     },
@@ -594,8 +594,8 @@ export default [
         rightText: "end the day",
         left: 57,
         right: 62,
-        leftDuration: 45000,
-        rightDuration: 70000,
+        leftDuration: 90000,
+        rightDuration: 40000,
         leftSoundFile: "VTS_(after_level_up)_VAARAfile_1min_30s",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
     },
@@ -627,7 +627,7 @@ export default [
         rightText: "go back in time",
         left: 60,
         right: 61,
-        leftDuration: 35000,
+        leftDuration: 40000,
         rightDuration: 80000,
         leftSoundFile: "Eat_the_frog_40s",
         rightSoundFile: "Go_Back_In_Time_1_min_20s"
