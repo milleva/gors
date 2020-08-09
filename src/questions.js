@@ -187,6 +187,7 @@ export default [
         right: 1901,
         leftDuration: 50000,
         rightDuration: 3000,
+        rightSoundFile: "silence",
         leftSoundFile: "Medallion_50s"
     },
     {
@@ -229,7 +230,7 @@ export default [
         right: 25,
         leftDuration: 3000,
         rightDuration: 45000,
-        leftSoundFile: "",
+        leftSoundFile: "silence",
         rightSoundFile: "Sacrifice_a_Soul_45s"
     },
     {
@@ -249,6 +250,7 @@ export default [
         right: 25,
         leftDuration: 3000,
         rightDuration: 45000,
+        leftSoundFile: "silence",
         rightSoundFile: "Sacrifice_a_Soul_45s"
     },
     {
@@ -285,7 +287,7 @@ export default [
         rightText: "eternal hello",
         left: 27,
         right: 28,
-        leftDuration: 50000,
+        leftDuration: 53000,
         rightDuration: 2000,
         rightSoundFile: "Stonegarden_&_Eternal_hello_LOOP",
         leftSoundFile: "GORS_kohtaus_53s"
@@ -394,7 +396,7 @@ export default [
         left: 37,
         right: 39,
         leftDuration: 3000,
-        rightDuration: 60000,
+        rightDuration: 70000,
         leftSoundFile: "Bag_of_Salt_30",
         rightSoundFile: "Cup_of_water_1min_10s"
     },
@@ -512,6 +514,7 @@ export default [
         rightText: "where are we?",
         left: 49,
         right: 58,
+        soundFile: "silence",
         leftDuration: 3000,
         rightDuration: 3000
     },
