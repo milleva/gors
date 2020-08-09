@@ -31,7 +31,8 @@ export default [
         rightText: "Look into the fountain",
         leftDuration: 25000,
         rightDuration: 25000,
-        leftSoundFile: "Tell_a_Story_&_check_the_forest_25s"
+        leftSoundFile: "Tell_a_Story_&_check_the_forest_25s",
+        rightSoundFile: "Fountain_&_Found_treasure(after_fountain)_20s"
     },
     {
         id: 4,
@@ -68,6 +69,7 @@ export default [
         endingEdit: "",
         leftDuration: 38000,
         rightDuration: 60000,
+        rightSoundFile: "Keep_On_Looking_1min",
         leftSoundFile: "Eat_the_frog_40s"
     },
     {
@@ -97,7 +99,8 @@ export default [
         duration: 20000,
         question: "You found an ancient treasure but you need a key to open it",
         style: "danger",
-        left: 9
+        left: 9,
+        soundFile: "Fountain_&_Found_treasure(after_fountain)_20s"
     },
     {
         id: 9,
@@ -240,8 +243,8 @@ export default [
         right: 25,
         leftDuration: 3000,
         rightDuration: 45000,
-        leftSoundFile: "Fight_the_spirits_toka_13s"
-        
+        leftSoundFile: "Fight_the_spirits_toka_13s",
+        rightSoundFile: "Sacrifice_a_Soul_45s"
     },
     {
         id: 23,
@@ -436,8 +439,9 @@ export default [
         right: 43,
         endingEdit: ", relation exploration",
         leftDuration: 30000,
-        rightDuration: null,
-        leftSoundFile: "Give_a_Gift_&_Continue_with_Thalatta_30s"
+        rightDuration: 25000,
+        leftSoundFile: "Give_a_Gift_&_Continue_with_Thalatta_30s",
+        rightSoundFile: "Tell_a_Story_&_check_the_forest_25s"
     },
     {
         id: 42,
@@ -583,6 +587,7 @@ export default [
         right: 62,
         leftDuration: 45000,
         rightDuration: 70000,
+        leftSoundFile: "VTS_(after_level_up)_VAARAfile_1min_30s",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
     },
     {
