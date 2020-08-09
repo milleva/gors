@@ -8,8 +8,8 @@ export default [
         rightText: "Wohoo",
         leftDuration: 10000,
         rightDuration: 10000,
-        leftSoundFile: "Enter the World 12s",
-        rightSoundFile: "Enter the World 12s"
+        leftSoundFile: "Enter_the_World_12s",
+        rightSoundFile: "Enter_the_World_12s"
     },
     {
         id: 2,
