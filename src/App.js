@@ -63,6 +63,7 @@ class App extends Component {
                 () => {
                     if(this.state.isShowingBackgroundOnly) {
                         this.setState({isShowingBackgroundOnly: false, gameStarted: true})
+                        this.setSoundFile("silence")
                         this.startExpandingQuestion(questions.find(q => q.id === this.state.currentQuestionId))
                     }
                 },
