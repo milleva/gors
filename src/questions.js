@@ -229,7 +229,7 @@ export default [
         right: 25,
         leftDuration: 3000,
         rightDuration: 45000,
-        leftSoundFile: "Fight_the_Spirits_eka_7s",
+        leftSoundFile: "",
         rightSoundFile: "Sacrifice_a_Soul_45s"
     },
     {
