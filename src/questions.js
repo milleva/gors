@@ -278,7 +278,8 @@ export default [
         right: 28,
         leftDuration: 50000,
         rightDuration: 2000,
-        rightSoundFile: "Stonegarden_&_Eternal_hello_LOOP"
+        rightSoundFile: "Stonegarden_&_Eternal_hello_LOOP",
+        leftSoundFile: "GORS_kohtaus_53s"
     },
     {
         id: 27,
@@ -350,6 +351,7 @@ export default [
         question: "You found an ancient treasure but it's locked",
         style: "danger",
         left: 34,
+        soundFile: "Aarre_(found_treasure_after_tell_them)_20s"
     },
     {
         id: 34,
