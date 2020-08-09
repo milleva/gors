@@ -165,7 +165,7 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                     <Sound
-                        url={`http://s3.amazonaws.com/gors-songs/${this.state.soundFile}`}
+                        url={`https://gors-songs.s3.amazonaws.com/${this.state.soundFile}`}
                         playStatus={!dev && Sound.status.PLAYING}
                         loop={true}
                     />
