@@ -144,7 +144,8 @@ export default [
         right: 14,
         leftDuration: 70000,
         rightDuration: 25000,
-        leftSoundFile: "No_Piknik_But_Mountain_1min_10s"
+        leftSoundFile: "No_Piknik_But_Mountain_1min_10s",
+        rightSoundFile: "VTS_(after_stonegarden)_&_Have_a_picnic_25s"
     },
     {
         id: 13,

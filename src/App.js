@@ -41,7 +41,7 @@ class App extends Component {
     
     componentWillMount() {
         document.addEventListener("keydown", this.onKeyPressed.bind(this));
-        setTimeout(() => this.setState({isShowingBackgroundOnly: false}), INITIAL_GAME_START_PREVENTION_DURATION)
+        setTimeout(() => this.setState({isShowingBackgroundOnly: false}), dev ? 1 : INITIAL_GAME_START_PREVENTION_DURATION)
     }
     
     componentWillUnmount() {
@@ -67,7 +67,7 @@ class App extends Component {
                         this.startExpandingQuestion(questions.find(q => q.id === this.state.currentQuestionId))
                     }
                 },
-                INITIAL_GAME_STARTING_PAUSE_MILLISECONDS)
+                dev ? 1 : INITIAL_GAME_STARTING_PAUSE_MILLISECONDS)
         } else if (isGameInputAllowed) {
             switch (e.keyCode) {
                 case 78://78 = 'n'
