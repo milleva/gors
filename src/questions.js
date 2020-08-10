@@ -153,6 +153,7 @@ export default [
         right: 14,
         leftDuration: 70000,
         rightDuration: 25000,
+        soundFile: "silence",
         leftSoundFile: "No_Piknik_But_Mountain_1min_10s",
         rightSoundFile: "VTS_(after_stonegarden)_&_Have_a_picnic_25s"
     },
@@ -174,6 +175,7 @@ export default [
         right: 16,
         leftDuration: 56000,
         rightDuration: 42000,
+        soundFile: "silence",
         leftSoundFile: "Level_up_(after_piknik)_56s",
         rightSoundFile: "Search_for_treasure_Key_42s"
     },
@@ -196,6 +198,7 @@ export default [
         right: 1901,
         leftDuration: 50000,
         rightDuration: 3000,
+        soundFile: "silence",
         rightSoundFile: "silence",
         leftSoundFile: "Medallion_50s"
     },
@@ -239,6 +242,7 @@ export default [
         right: 25,
         leftDuration: 3000,
         rightDuration: 45000,
+        soundFile: "silence",
         leftSoundFile: "silence",
         rightSoundFile: "Sacrifice_a_Soul_45s"
     },
@@ -296,11 +300,11 @@ export default [
         rightText: "eternal hello",
         left: 27,
         right: 28,
-        leftDuration: 53000,
+        leftDuration: 54000,
         rightDuration: 2000,
         soundFile: "silence",
         rightSoundFile: "Stonegarden_&_Eternal_hello_LOOP",
-        leftSoundFile: "GORS_kohtaus_53s"
+        leftSoundFile: "GORS_kohtaus_54s"
     },
     {
         id: 27,
@@ -496,10 +500,10 @@ export default [
         rightText: "pass the salt",
         left: 46,
         right: 47,
-        leftDuration: 65000,
+        leftDuration: 60000,
         rightDuration: 40000,
         soundFile: "silence",
-        leftSoundFile: "Add_Salt_toka_1min_5s",
+        leftSoundFile: "Add_Salt_toka_(1min)",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
     },
     {
@@ -598,7 +602,7 @@ export default [
         rightDuration: 31000,
         soundFile: "silence",
         rightSoundFile: "Bonus_Game31",
-        leftSoundFile: "VTS_(after_level_up)_VAARAfile_1min_30s"
+        leftSoundFile: "VTS_after_level_up_(1min30s)"
     },
     {
         id: 55,
@@ -619,7 +623,7 @@ export default [
         leftDuration: 90000,
         rightDuration: 40000,
         soundFile: "silence",
-        leftSoundFile: "VTS_(after_level_up)_VAARAfile_1min_30s",
+        leftSoundFile: "VTS_after_level_up_(1min30s)",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
     },
     {
