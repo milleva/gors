@@ -33,7 +33,7 @@ export default [
         rightText: "look into the fountain",
         soundFile: "silence",
         leftDuration: 25000,
-        rightDuration: 20000,
+        rightDuration: 30000, //added 10sec 11.8.2020
         leftSoundFile: "Tell_a_Story_&_check_the_forest_25s",
         rightSoundFile: "Fountain_&_Found_treasure(after_fountain)_20s"
     },
@@ -367,14 +367,14 @@ export default [
         left: 40,
         right: 33,
         leftDuration: 35000,
-        rightDuration: 15000,
+        rightDuration: 19000, //added 4sec 11.8.2020
         soundFile: "silence",
         leftSoundFile: "Pay_The_Fee_35s",
         rightSoundFile: "Tell_them_they_cant_own_the_mountain_15s"
     },
     {
         id: 33,
-        duration: 20000,
+        duration: 25000, //added 5 sec 11.8.2020
         question: "You found an ancient treasure but it's locked",
         style: "danger",
         left: 34,
@@ -565,6 +565,7 @@ export default [
     {
         id: 51,
         duration: 10000,
+        soundFile: "silence",
         question: "Ahh.. Thank you, you kind creatures. I've heard" +
         " the Sandlands are worth a visit. But be cautious!",
         style: "speech-bubble",
