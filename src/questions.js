@@ -125,7 +125,7 @@ export default [
         id: 10,
         left: 11,
         right: 26,
-        leftText: "venture the sandlands",
+        leftText: "venture the Sandlands",
         rightText: "stick together",
         leftDuration: 50000,
         rightDuration: 49000,
@@ -311,7 +311,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "BLIDS:\n 3\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, salt",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, sweat and salt",
         left: 1,
         right: 1,
         duration: 1000000
@@ -341,7 +341,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n 16\n" +
-        "LOST AND FOUND: \n  route, frog, moment of loading, potion, deadly fingers",
+        "LOST AND FOUND: \n  route, frog, moment of loading, potion, deadly fungus",
         left: 1,
         right: 1,
         duration: 1000000
@@ -478,7 +478,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "BLIDS:\n 6\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, theft, deadly things",
+        "LOST AND FOUND: \n  route, mountain ticket, relation exploration, theft, deadly things",
         left: 1,
         right: 1,
         duration: 1000000
@@ -515,7 +515,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n" +
         "BLIDS:\n 9\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, memories, relation exploration, bruises",
+        "LOST AND FOUND: \n  route, mountain ticket, relation exploration, memories, bruises",
         left: 1,
         right: 1,
         duration: 1000000
@@ -525,7 +525,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "BLIDS:\n 14\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, memories, ease",
+        "LOST AND FOUND: \n  route, mountain ticket, relation exploration, memories, ease",
         left: 1,
         right: 1,
         duration: 1000000
