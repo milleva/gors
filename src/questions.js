@@ -6,8 +6,8 @@ export default [
         right: 2,
         leftText: "yes",
         rightText: "wohoo",
-        leftDuration: 12000,
-        rightDuration: 12000,
+        leftDuration: 15000,
+        rightDuration: 15000,
         soundFile: "silence",
         leftSoundFile: "Enter_the_World_12s",
         rightSoundFile: "Enter_the_World_12s"
@@ -19,8 +19,8 @@ export default [
         right: 31,
         leftText: "left",
         rightText: "right",
-        leftDuration: 20000,
-        rightDuration: 20000,
+        leftDuration: 23000,
+        rightDuration: 23000,
         soundFile: "silence",
         leftSoundFile: "Left_20s",
         rightSoundFile: "Right_20s"
@@ -32,7 +32,7 @@ export default [
         leftText: "check the forest",
         rightText: "look into the fountain",
         soundFile: "silence",
-        leftDuration: 25000,
+        leftDuration: 28000,
         rightDuration: 30000, //added 10sec 11.8.2020
         leftSoundFile: "Tell_a_Story_&_check_the_forest_25s",
         rightSoundFile: "Fountain_&_Found_treasure(after_fountain)_20s"
@@ -44,8 +44,8 @@ export default [
         right: 5,
         leftText: "run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
         rightText: "embrace the thunder", // -> "moment of blooming" jokaiseen loppuun lost and found osioon
-        leftDuration: 40000,
-        rightDuration: 40000,
+        leftDuration: 43000,
+        rightDuration: 43000,
         soundFile: "silence",
         leftSoundFile: "Embrace_the_Thunder_Run_to_safety_40s",
         rightSoundFile: "Embrace_the_Thunder_Run_to_safety_40s"
@@ -58,8 +58,8 @@ export default [
         leftText: "eat the frog",
         rightText: "keep on looking",
         endingEdit: "",
-        leftDuration: 40000,
-        rightDuration: 60000,
+        leftDuration: 43000,
+        rightDuration: 63000,
         soundFile: "silence",
         leftSoundFile: "Eat_the_frog_40s",
         rightSoundFile: "Keep_On_Looking_1min"
@@ -72,8 +72,8 @@ export default [
         leftText: "eat the frog",
         rightText: "keep on looking",
         endingEdit: "",
-        leftDuration: 40000,
-        rightDuration: 60000,
+        leftDuration: 43000,
+        rightDuration: 63000,
         soundFile: "silence",
         rightSoundFile: "Keep_On_Looking_1min",
         leftSoundFile: "Eat_the_frog_40s"
@@ -84,8 +84,8 @@ export default [
         right: 30,
         leftText: "help Thalamis",
         rightText: "continue with Thalatta",
-        leftDuration: 51000,
-        rightDuration: 30000,
+        leftDuration: 54000,
+        rightDuration: 33000,
         soundFile: "silence",
         rightSoundFile: "Give_a_Gift_&_Continue_with_Thalatta_30s",
         leftSoundFile: "Help_Thalamis_51s"
@@ -103,7 +103,7 @@ export default [
     
     {
         id: 8,
-        duration: 20000,
+        duration: 23000,
         question: "You found an ancient treasure but you need a key to open it",
         style: "danger",
         left: 9,
@@ -115,8 +115,8 @@ export default [
         right: 12,
         leftText: "jumps and turns",
         rightText: "swing and fly",
-        leftDuration: 61000,
-        rightDuration: 60000,
+        leftDuration: 64000,
+        rightDuration: 63000,
         soundFile: "silence",
         leftSoundFile: "Jump_and_Turns_1min_1s",
         rightSoundFile: "Swing_and_Fly_1min"
@@ -127,8 +127,8 @@ export default [
         right: 26,
         leftText: "venture the sandlands",
         rightText: "stick together",
-        leftDuration: 47000,
-        rightDuration: 46000,
+        leftDuration: 50000,
+        rightDuration: 49000,
         soundFile: "silence",
         rightSoundFile: "Stick_Together_46s",
         leftSoundFile: "VTS_(after_jumps_and_turns)_47s"
@@ -151,8 +151,8 @@ export default [
         rightText: "yes please",
         left: 13,
         right: 14,
-        leftDuration: 70000,
-        rightDuration: 25000,
+        leftDuration: 73000,
+        rightDuration: 28000,
         soundFile: "silence",
         leftSoundFile: "No_Piknik_But_Mountain_1min_10s",
         rightSoundFile: "VTS_(after_stonegarden)_&_Have_a_picnic_25s"
@@ -173,8 +173,8 @@ export default [
         rightText: "search for the treasure key",
         left: 15,
         right: 16,
-        leftDuration: 56000,
-        rightDuration: 42000,
+        leftDuration: 59000,
+        rightDuration: 45000,
         soundFile: "silence",
         leftSoundFile: "Level_up_(after_piknik)_56s",
         rightSoundFile: "Search_for_treasure_Key_42s"
@@ -196,7 +196,7 @@ export default [
         rightText: "rolling spin",
         left: 18,
         right: 1901,
-        leftDuration: 50000,
+        leftDuration: 53000,
         rightDuration: 3000,
         soundFile: "silence",
         rightSoundFile: "silence",
@@ -220,7 +220,7 @@ export default [
         question: "You used a wrong key. The treasure disappeared into thin air",
         style: "danger",
         soundFile: "Rolling_spin_1min_25s",
-        duration: 85000,
+        duration: 88000,
         left: 19,
     },
     {
@@ -241,7 +241,7 @@ export default [
         left: 21,
         right: 25,
         leftDuration: 3000,
-        rightDuration: 45000,
+        rightDuration: 48000,
         soundFile: "silence",
         leftSoundFile: "silence",
         rightSoundFile: "Sacrifice_a_Soul_45s"
@@ -252,7 +252,7 @@ export default [
         style: "danger",
         left: 22,
         soundFile: "Fight_the_Spirits_eka_7s",
-        duration: 7000
+        duration: 10000
     },
     {
         id: 22,
@@ -262,7 +262,7 @@ export default [
         left: 23,
         right: 25,
         leftDuration: 3000,
-        rightDuration: 45000,
+        rightDuration: 48000,
         leftSoundFile: "silence",
         rightSoundFile: "Sacrifice_a_Soul_45s"
     },
@@ -272,7 +272,7 @@ export default [
         style: "danger",
         left: 24,
         soundFile: "Fight_the_spirits_toka_13s",
-        duration: 13000
+        duration: 16000
     },
     {
         id: 24,
@@ -300,7 +300,7 @@ export default [
         rightText: "eternal hello",
         left: 27,
         right: 28,
-        leftDuration: 54000,
+        leftDuration: 57000,
         rightDuration: 2000,
         soundFile: "silence",
         rightSoundFile: "Stonegarden_&_Eternal_hello_LOOP",
@@ -353,8 +353,8 @@ export default [
         rightText: "explore the woods",
         left: 32,
         right: 48,
-        leftDuration: 21000,
-        rightDuration: 30000,
+        leftDuration: 24000,
+        rightDuration: 33000,
         soundFile: "silence",
         rightSoundFile: "Explore_the_Woods_30s",
         leftSoundFile: "Mountainwalk_21s"
@@ -366,7 +366,7 @@ export default [
         rightText: "tell them they can't own the mountain",
         left: 40,
         right: 33,
-        leftDuration: 35000,
+        leftDuration: 38000,
         rightDuration: 19000, //added 4sec 11.8.2020
         soundFile: "silence",
         leftSoundFile: "Pay_The_Fee_35s",
@@ -387,8 +387,8 @@ export default [
         rightText: "spider nest",
         left: 35,
         right: 36,
-        leftDuration: 130000,
-        rightDuration: 45000,
+        leftDuration: 133000,
+        rightDuration: 48000,
         soundFile: "silence",
         leftSoundFile: "Snakehole_2min_10s",
         rightSoundFile: "Spidernest_45s"
@@ -413,9 +413,9 @@ export default [
         left: 37,
         right: 39,
         leftDuration: 3000,
-        rightDuration: 70000,
+        rightDuration: 73000,
         soundFile: "silence",
-        leftSoundFile: "Bag_of_Salt_30",
+        leftSoundFile: "silence",
         rightSoundFile: "Cup_of_water_1min_10s"
     },
     {
@@ -424,7 +424,8 @@ export default [
         "Here is water instead, " +
         "you will need it when you find the salt.",
         style: "speech-bubble",
-        duration: 30000,
+        soundFile: "Bag_of_Salt_30",
+        duration: 33000,
         left: 38
     },
     {
@@ -453,8 +454,8 @@ export default [
         rightText: "tell a story",
         left: 41,
         right: 43,
-        leftDuration: 30000,
-        rightDuration: 25000,
+        leftDuration: 33000,
+        rightDuration: 28000,
         soundFile: "silence",
         leftSoundFile: "Kiss_30s",
         rightSoundFile: "Tell_a_Story_&_check_the_forest_25s"
@@ -466,8 +467,8 @@ export default [
         left: 42,
         right: 43,
         endingEdit: ", relation exploration",
-        leftDuration: 30000,
-        rightDuration: 25000,
+        leftDuration: 33000,
+        rightDuration: 28000,
         soundFile: "silence",
         leftSoundFile: "Give_a_Gift_&_Continue_with_Thalatta_30s",
         rightSoundFile: "Tell_a_Story_&_check_the_forest_25s"
@@ -488,8 +489,8 @@ export default [
         rightText: "pass the salt",
         left: 44,
         right: 47,
-        leftDuration: 48000,
-        rightDuration: 40000,
+        leftDuration: 51000,
+        rightDuration: 43000,
         soundFile: "silence",
         leftSoundFile: "Add_Salt_eka_48s",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
@@ -500,8 +501,8 @@ export default [
         rightText: "pass the salt",
         left: 46,
         right: 47,
-        leftDuration: 60000,
-        rightDuration: 40000,
+        leftDuration: 63000,
+        rightDuration: 43000,
         soundFile: "silence",
         leftSoundFile: "Add_Salt_toka_(1min)",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
@@ -542,7 +543,7 @@ export default [
     },
     {
         id: 49,
-        duration: 25000,
+        duration: 28000,
         question: "Before I answer help me with the stone garden. " +
         "Someone has destroyed it.",
         style: "speech-bubble",
@@ -556,8 +557,8 @@ export default [
         leftText: "...",
         left: 51,
         right: 51,
-        leftDuration: 18000,
-        rightDuration: 18000,
+        leftDuration: 21000,
+        rightDuration: 21000,
         soundFile: "Stonegarden_&_Eternal_hello_LOOP",
         leftSoundFile: "SG_Ready_blank_18s",
         rightSoundFile: "SG_Ready_blank_18s"
@@ -577,8 +578,8 @@ export default [
         rightText: "level up",
         left: 53,
         right: 54,
-        leftDuration: 25000,
-        rightDuration: 36000,
+        leftDuration: 28000,
+        rightDuration: 39000,
         soundFile: "silence",
         rightSoundFile: "Level_Up_(after_visit_sandland_comment)_36s",
         leftSoundFile: "VTS_(after_stonegarden)_&_Have_a_picnic_25s"
@@ -599,8 +600,8 @@ export default [
         rightText: "bonus Game",
         left: 55,
         right: 56,
-        leftDuration: 90000,
-        rightDuration: 31000,
+        leftDuration: 12000,
+        rightDuration: 34000,
         soundFile: "silence",
         rightSoundFile: "Bonus_Game31",
         leftSoundFile: "VTS_after_level_up_(1min30s)"
@@ -621,8 +622,8 @@ export default [
         rightText: "end the day",
         left: 57,
         right: 62,
-        leftDuration: 90000,
-        rightDuration: 40000,
+        leftDuration: 12000,
+        rightDuration: 70000,
         soundFile: "silence",
         leftSoundFile: "VTS_after_level_up_(1min30s)",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
@@ -641,7 +642,7 @@ export default [
     },
     {
         id: 58,
-        duration: 13000,
+        duration: 16000,
         question: "Mmm... We are in a time tunnel. " +
         "It's quite complicated. Maybe you can understand " +
         "it if I refer it to food.",
@@ -655,8 +656,8 @@ export default [
         rightText: "go back in time",
         left: 60,
         right: 61,
-        leftDuration: 40000,
-        rightDuration: 80000,
+        leftDuration: 70000,
+        rightDuration: 11000,
         soundFile: "silence",
         leftSoundFile: "Eat_the_frog_40s",
         rightSoundFile: "Go_Back_In_Time_1_min_20s"
