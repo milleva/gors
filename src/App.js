@@ -28,7 +28,7 @@ const initialAppState = {
     currentQuestionCharacterIndex: 1,
     isDisplayingReply: false,
     latestReply: "",
-    soundFile: "Stonegarden_&_Eternal_hello_LOOP",
+    soundFile: "",
     endingEdit: "",
     isShowingBackgroundOnly: true
 }
@@ -41,7 +41,13 @@ class App extends Component {
     
     componentWillMount() {
         document.addEventListener("keydown", this.onKeyPressed.bind(this));
-        setTimeout(() => this.setState({isShowingBackgroundOnly: false}), dev ? 1 : INITIAL_GAME_START_PREVENTION_DURATION)
+        setTimeout(() =>
+            this.setState(
+                {
+                    isShowingBackgroundOnly: false,
+                    soundFile: "Stonegarden_&_Eternal_hello_LOOP.wav"
+                })
+            , dev ? 1 : INITIAL_GAME_START_PREVENTION_DURATION)
     }
     
     componentWillUnmount() {
