@@ -19,8 +19,8 @@ export default [
         right: 31,
         leftText: "left",
         rightText: "right",
-        leftDuration: 23000,
-        rightDuration: 23000,
+        leftDuration: 20000,
+        rightDuration: 22000,
         soundFile: "silence",
         leftSoundFile: "Left_20s",
         rightSoundFile: "Right_20s"
@@ -32,8 +32,8 @@ export default [
         leftText: "check the forest",
         rightText: "look into the fountain",
         soundFile: "silence",
-        leftDuration: 28000,
-        rightDuration: 30000, //added 10sec 11.8.2020
+        leftDuration: 25000,
+        rightDuration: 26000, //file length 26sec checked
         leftSoundFile: "Tell_a_Story_&_check_the_forest_25s",
         rightSoundFile: "Fountain_&_Found_treasure(after_fountain)_20s"
     },
@@ -44,8 +44,8 @@ export default [
         right: 5,
         leftText: "run to safety", // -> "moment of loading" jokaiseen loppuun lost and found osioon
         rightText: "embrace the thunder", // -> "moment of blooming" jokaiseen loppuun lost and found osioon
-        leftDuration: 43000,
-        rightDuration: 43000,
+        leftDuration: 40000,
+        rightDuration: 40000,
         soundFile: "silence",
         leftSoundFile: "Embrace_the_Thunder_Run_to_safety_40s",
         rightSoundFile: "Embrace_the_Thunder_Run_to_safety_40s"
@@ -58,8 +58,8 @@ export default [
         leftText: "eat the frog",
         rightText: "keep on looking",
         endingEdit: "",
-        leftDuration: 43000,
-        rightDuration: 63000,
+        leftDuration: 41000,
+        rightDuration: 60000,
         soundFile: "silence",
         leftSoundFile: "Eat_the_frog_40s",
         rightSoundFile: "Keep_On_Looking_1min"
@@ -72,8 +72,8 @@ export default [
         leftText: "eat the frog",
         rightText: "keep on looking",
         endingEdit: "",
-        leftDuration: 43000,
-        rightDuration: 63000,
+        leftDuration: 40000,
+        rightDuration: 60000,
         soundFile: "silence",
         rightSoundFile: "Keep_On_Looking_1min",
         leftSoundFile: "Eat_the_frog_40s"
@@ -84,7 +84,7 @@ export default [
         right: 30,
         leftText: "help Thalamis",
         rightText: "continue with Thalatta",
-        leftDuration: 54000,
+        leftDuration: 51000,
         rightDuration: 33000,
         soundFile: "silence",
         rightSoundFile: "Give_a_Gift_&_Continue_with_Thalatta_30s",
@@ -94,7 +94,7 @@ export default [
         id: 7,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 6\n" +
+        "YOUR SCORE\n\n BLIDS:\n 6\n" +
         "LOST AND FOUND: \n  route, frog, moment of loading, poison, combo = gloves+fungi",
         left: 1,
         right: 1,
@@ -103,7 +103,7 @@ export default [
     
     {
         id: 8,
-        duration: 23000,
+        duration: 20000,
         question: "You found an ancient treasure but you need a key to open it",
         style: "danger",
         left: 9,
@@ -115,8 +115,8 @@ export default [
         right: 12,
         leftText: "jumps and turns",
         rightText: "swing and fly",
-        leftDuration: 64000,
-        rightDuration: 63000,
+        leftDuration: 61000,
+        rightDuration: 60000,
         soundFile: "silence",
         leftSoundFile: "Jump_and_Turns_1min_1s",
         rightSoundFile: "Swing_and_Fly_1min"
@@ -127,8 +127,8 @@ export default [
         right: 26,
         leftText: "venture the Sandlands",
         rightText: "stick together",
-        leftDuration: 50000,
-        rightDuration: 49000,
+        leftDuration: 47000,
+        rightDuration: 46000,
         soundFile: "silence",
         rightSoundFile: "Stick_Together_46s",
         leftSoundFile: "VTS_(after_jumps_and_turns)_47s"
@@ -137,7 +137,7 @@ export default [
         id: 11,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 9\n" +
+        "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, separation",
         left: 1,
         right: 1,
@@ -151,8 +151,8 @@ export default [
         rightText: "yes please",
         left: 13,
         right: 14,
-        leftDuration: 73000,
-        rightDuration: 28000,
+        leftDuration: 70000,
+        rightDuration: 25000,
         soundFile: "silence",
         leftSoundFile: "No_Piknik_But_Mountain_1min_10s",
         rightSoundFile: "VTS_(after_stonegarden)_&_Have_a_picnic_25s"
@@ -161,7 +161,7 @@ export default [
         id: 13,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 16\n" +
+        "YOUR SCORE\n\n BLIDS:\n 16\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, hunger, hangry friend",
         left: 1,
         right: 1,
@@ -173,8 +173,8 @@ export default [
         rightText: "search for the treasure key",
         left: 15,
         right: 16,
-        leftDuration: 59000,
-        rightDuration: 45000,
+        leftDuration: 56000,
+        rightDuration: 42000,
         soundFile: "silence",
         leftSoundFile: "Level_up_(after_piknik)_56s",
         rightSoundFile: "Search_for_treasure_Key_42s"
@@ -183,7 +183,7 @@ export default [
         id: 15,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 0\n" +
+        "YOUR SCORE\n\n BLIDS:\n 0\n" +
         "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, freedom",
         left: 1,
         right: 1,
@@ -196,7 +196,7 @@ export default [
         rightText: "rolling spin",
         left: 18,
         right: 1901,
-        leftDuration: 53000,
+        leftDuration: 50000,
         rightDuration: 3000,
         soundFile: "silence",
         rightSoundFile: "silence",
@@ -209,7 +209,7 @@ export default [
         id: 18,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 10\n" +
+        "YOUR SCORE\n\n BLIDS:\n 10\n" +
         "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ancient treasure",
         left: 1,
         right: 1,
@@ -220,14 +220,14 @@ export default [
         question: "You used a wrong key. The treasure disappeared into thin air",
         style: "danger",
         soundFile: "Rolling_spin_1min_25s",
-        duration: 88000,
+        duration: 85000,
         left: 19,
     },
     {
         id: 19,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 10\n" +
+        "YOUR SCORE\n\n BLIDS:\n 10\n" +
         "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ghost treasure, balance",
         left: 1,
         right: 1,
@@ -241,7 +241,7 @@ export default [
         left: 21,
         right: 25,
         leftDuration: 3000,
-        rightDuration: 48000,
+        rightDuration: 45000,
         soundFile: "silence",
         leftSoundFile: "silence",
         rightSoundFile: "Sacrifice_a_Soul_45s"
@@ -252,7 +252,7 @@ export default [
         style: "danger",
         left: 22,
         soundFile: "Fight_the_Spirits_eka_7s",
-        duration: 10000
+        duration: 7000
     },
     {
         id: 22,
@@ -262,7 +262,7 @@ export default [
         left: 23,
         right: 25,
         leftDuration: 3000,
-        rightDuration: 48000,
+        rightDuration: 45000,
         leftSoundFile: "silence",
         rightSoundFile: "Sacrifice_a_Soul_45s"
     },
@@ -272,13 +272,13 @@ export default [
         style: "danger",
         left: 24,
         soundFile: "Fight_the_spirits_toka_13s",
-        duration: 16000
+        duration: 14000
     },
     {
         id: 24,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 10\n" +
+        "YOUR SCORE\n\n BLIDS:\n 10\n" +
         "LOST AND FOUND: \n  route, moment of loading, frog, food, spirits, dead end",
         left: 1,
         right: 1,
@@ -288,7 +288,7 @@ export default [
         id: 25,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 13\n" +
+        "YOUR SCORE\n\n BLIDS:\n 13\n" +
         "LOST AND FOUND: \n  route, moment of loading, frog, food, spirits, sorrow",
         left: 1,
         right: 1,
@@ -300,7 +300,7 @@ export default [
         rightText: "eternal hello",
         left: 27,
         right: 28,
-        leftDuration: 57000,
+        leftDuration: 54000,
         rightDuration: 2000,
         soundFile: "silence",
         rightSoundFile: "Stonegarden_&_Eternal_hello_LOOP",
@@ -310,7 +310,7 @@ export default [
         id: 27,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 3\n" +
+        "YOUR SCORE\n\n BLIDS:\n 3\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, sweat and salt",
         left: 1,
         right: 1,
@@ -330,7 +330,7 @@ export default [
         id: 29,
         style: "game-over",
         question: "GOOD BYE\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 3\n" +
+        "YOUR SCORE\n\n BLIDS:\n 3\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, skill of precence",
         left: 1,
         right: 1,
@@ -340,7 +340,7 @@ export default [
         id: 30,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 16\n" +
+        "YOUR SCORE\n\n BLIDS:\n 16\n" +
         "LOST AND FOUND: \n  route, frog, moment of loading, potion, deadly fungus",
         left: 1,
         right: 1,
@@ -353,8 +353,8 @@ export default [
         rightText: "explore the woods",
         left: 32,
         right: 48,
-        leftDuration: 24000,
-        rightDuration: 33000,
+        leftDuration: 21000,
+        rightDuration: 30000,
         soundFile: "silence",
         rightSoundFile: "Explore_the_Woods_30s",
         leftSoundFile: "Mountainwalk_21s"
@@ -366,8 +366,8 @@ export default [
         rightText: "tell them they can't own the mountain",
         left: 40,
         right: 33,
-        leftDuration: 38000,
-        rightDuration: 19000, //added 4sec 11.8.2020
+        leftDuration: 35000,
+        rightDuration: 15000,
         soundFile: "silence",
         leftSoundFile: "Pay_The_Fee_35s",
         rightSoundFile: "Tell_them_they_cant_own_the_mountain_15s"
@@ -387,8 +387,8 @@ export default [
         rightText: "spider nest",
         left: 35,
         right: 36,
-        leftDuration: 133000,
-        rightDuration: 48000,
+        leftDuration: 130000,
+        rightDuration: 45000,
         soundFile: "silence",
         leftSoundFile: "Snakehole_2min_10s",
         rightSoundFile: "Spidernest_45s"
@@ -397,7 +397,7 @@ export default [
         id: 35,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 12\n" +
+        "YOUR SCORE\n\n BLIDS:\n 12\n" +
         "LOST AND FOUND: \n  route, question of ownership, fear, balance ",
         left: 1,
         right: 1,
@@ -413,7 +413,7 @@ export default [
         left: 37,
         right: 39,
         leftDuration: 3000,
-        rightDuration: 73000,
+        rightDuration: 70000,
         soundFile: "silence",
         leftSoundFile: "silence",
         rightSoundFile: "Cup_of_water_1min_10s"
@@ -425,14 +425,14 @@ export default [
         "you will need it when you find the salt.",
         style: "speech-bubble",
         soundFile: "Bag_of_Salt_30",
-        duration: 33000,
+        duration: 30000,
         left: 38
     },
     {
         id: 38,
         style: "game-over",
         question: "GAME OCEAN\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 9\n" +
+        "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, question of ownership, mountain spirit, discontent, water",
         left: 1,
         right: 1,
@@ -442,7 +442,7 @@ export default [
         id: 39,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 14\n" +
+        "YOUR SCORE\n\n BLIDS:\n 14\n" +
         "LOST AND FOUND: \n  route, question of ownership, mountain spirit, spiritual enlightenment",
         left: 1,
         right: 1,
@@ -454,8 +454,8 @@ export default [
         rightText: "tell a story",
         left: 41,
         right: 43,
-        leftDuration: 33000,
-        rightDuration: 28000,
+        leftDuration: 30000,
+        rightDuration: 25000,
         soundFile: "silence",
         leftSoundFile: "Kiss_30s",
         rightSoundFile: "Tell_a_Story_&_check_the_forest_25s"
@@ -467,8 +467,8 @@ export default [
         left: 42,
         right: 43,
         endingEdit: ", relation exploration",
-        leftDuration: 33000,
-        rightDuration: 28000,
+        leftDuration: 30000,
+        rightDuration: 25000,
         soundFile: "silence",
         leftSoundFile: "Give_a_Gift_&_Continue_with_Thalatta_30s",
         rightSoundFile: "Tell_a_Story_&_check_the_forest_25s"
@@ -477,7 +477,7 @@ export default [
         id: 42,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 6\n" +
+        "YOUR SCORE\n\n BLIDS:\n 6\n" +
         "LOST AND FOUND: \n  route, mountain ticket, relation exploration, theft, deadly things",
         left: 1,
         right: 1,
@@ -489,8 +489,8 @@ export default [
         rightText: "pass the salt",
         left: 44,
         right: 47,
-        leftDuration: 51000,
-        rightDuration: 43000,
+        leftDuration: 48000,
+        rightDuration: 40000,
         soundFile: "silence",
         leftSoundFile: "Add_Salt_eka_48s",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
@@ -501,8 +501,8 @@ export default [
         rightText: "pass the salt",
         left: 46,
         right: 47,
-        leftDuration: 63000,
-        rightDuration: 43000,
+        leftDuration: 60000,
+        rightDuration: 40000,
         soundFile: "silence",
         leftSoundFile: "Add_Salt_toka_(1min)",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
@@ -514,7 +514,7 @@ export default [
         id: 46,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n" +
-        "YOUR SCORE:\n BLIDS:\n 9\n" +
+        "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, mountain ticket, relation exploration, memories, bruises",
         left: 1,
         right: 1,
@@ -524,7 +524,7 @@ export default [
         id: 47,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 14\n" +
+        "YOUR SCORE\n\n BLIDS:\n 14\n" +
         "LOST AND FOUND: \n  route, mountain ticket, relation exploration, memories, ease",
         left: 1,
         right: 1,
@@ -557,8 +557,8 @@ export default [
         leftText: "...",
         left: 51,
         right: 51,
-        leftDuration: 21000,
-        rightDuration: 21000,
+        leftDuration: 18000,
+        rightDuration: 18000,
         soundFile: "Stonegarden_&_Eternal_hello_LOOP",
         leftSoundFile: "SG_Ready_blank_18s",
         rightSoundFile: "SG_Ready_blank_18s"
@@ -578,8 +578,8 @@ export default [
         rightText: "level up",
         left: 53,
         right: 54,
-        leftDuration: 28000,
-        rightDuration: 39000,
+        leftDuration: 25000,
+        rightDuration: 36000,
         soundFile: "silence",
         rightSoundFile: "Level_Up_(after_visit_sandland_comment)_36s",
         leftSoundFile: "VTS_(after_stonegarden)_&_Have_a_picnic_25s"
@@ -588,7 +588,7 @@ export default [
         id: 53,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 9\n" +
+        "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, business, hope, recklessness",
         left: 1,
         right: 1,
@@ -600,8 +600,8 @@ export default [
         rightText: "bonus Game",
         left: 55,
         right: 56,
-        leftDuration: 12000,
-        rightDuration: 34000,
+        leftDuration: 90000,
+        rightDuration: 31000,
         soundFile: "silence",
         rightSoundFile: "Bonus_Game31",
         leftSoundFile: "VTS_after_level_up_(1min30s)"
@@ -610,7 +610,7 @@ export default [
         id: 55,
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 9\n" +
+        "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, business, growth, unforgettable dance",
         left: 1,
         right: 1,
@@ -622,8 +622,8 @@ export default [
         rightText: "end the day",
         left: 57,
         right: 62,
-        leftDuration: 12000,
-        rightDuration: 70000,
+        leftDuration: 90000,
+        rightDuration: 40000,
         soundFile: "silence",
         leftSoundFile: "VTS_after_level_up_(1min30s)",
         rightSoundFile: "Pass_the_Salt_&_End_the_day_40s"
@@ -632,7 +632,7 @@ export default [
         id: 57,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 9\n" +
+        "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, business, growth, mutual empowerment by " +
         "lifting one another up for their growth through noticing their qualities and skills while also doing something meaningful together, " +
         "unforgettable dance",
@@ -642,7 +642,7 @@ export default [
     },
     {
         id: 58,
-        duration: 16000,
+        duration: 13000,
         question: "Mmm... We are in a time tunnel. " +
         "It's quite complicated. Maybe you can understand " +
         "it if I refer it to food.",
@@ -656,8 +656,8 @@ export default [
         rightText: "go back in time",
         left: 60,
         right: 61,
-        leftDuration: 70000,
-        rightDuration: 11000,
+        leftDuration: 40000,
+        rightDuration: 80000,
         soundFile: "silence",
         leftSoundFile: "Eat_the_frog_40s",
         rightSoundFile: "Go_Back_In_Time_1_min_20s"
@@ -666,7 +666,7 @@ export default [
         id: 60,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 6\n" +
+        "YOUR SCORE\n\n BLIDS:\n 6\n" +
         "LOST AND FOUND: \n route, frog, knowledge, poison",
         left: 1,
         right: 1,
@@ -676,7 +676,7 @@ export default [
         id: 61,
         style: "game-over",
         question: "TIMES UP\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 6\n" +
+        "YOUR SCORE\n\n BLIDS:\n 6\n" +
         "LOST AND FOUND: \n route, frog, knowledge, shape of time",
         left: 1,
         right: 1,
@@ -686,7 +686,7 @@ export default [
         id: 62,
         style: "game-over",
         question: "GAME OVER\n\n" +
-        "YOUR SCORE:\n BLIDS:\n 9\n" +
+        "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, business, growth, mutual empowerement by " +
         "lifting one another up for their growth through noticing their qualities and skills while also doing something meaningful together",
         left: 1,

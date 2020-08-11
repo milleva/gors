@@ -11,7 +11,7 @@ const dev = false
 
 const DEFAULT_PAUSE_MILLISECONDS = 5000
 const INITIAL_GAME_START_PREVENTION_DURATION = 10000
-const INITIAL_GAME_STARTING_PAUSE_MILLISECONDS = 20000
+const INITIAL_GAME_STARTING_PAUSE_MILLISECONDS = 22000
 //20sec (3.8.2020)
 
 
@@ -46,8 +46,7 @@ class App extends Component {
                 {
                     isShowingBackgroundOnly: false,
                     soundFile: "Stonegarden_&_Eternal_hello_LOOP.wav"
-                })
-            , dev ? 1 : INITIAL_GAME_START_PREVENTION_DURATION)
+                }), dev ? 1 : INITIAL_GAME_START_PREVENTION_DURATION)
     }
     
     componentWillUnmount() {
