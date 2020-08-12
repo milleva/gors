@@ -15,8 +15,8 @@ https://gors.herokuapp.com/
 
 ### AWS S3
 
-The S3 bucket name is `gors-songs`, resides in the url `https://s3.amazonaws.com/gors-songs/` and is managed
-by the account emiller.arkko@gmail.com (Evan Miller's personal AWS account. The idea is to eventually migrate them somewhere else).
+The S3 bucket name is `gors-songs, resides in the url `https://s3.amazonaws.com/gors-songs/` and is managed
+by Evan Miller's personal AWS account (milleva). The idea is to eventually migrate them somewhere else.
 
 ### To run locally
 
