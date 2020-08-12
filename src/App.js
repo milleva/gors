@@ -183,7 +183,7 @@ class App extends Component {
                                 <div className="app-content">
                                     {question.question &&
                                     <span>
-                                            {question.style === "danger" && <img style={{position: "absolute", left: "15.5em", top: "2em", width: 1300}} src={dangerBubble} alt=""/>}
+                                            {question.style === "danger" && <img style={{position: "absolute", left: "13.5em", top: "2em", width: 950}} src={dangerBubble} alt=""/>}
                                         <h1 className={question.style || "title"}>
                                                 {displayedMainText.substring(0, this.state.currentQuestionCharacterIndex)}
                                             </h1>
@@ -222,8 +222,10 @@ class App extends Component {
 const styles = {
     answer: {
         margin: 35,
+        marginTop: 0,
         fontSize: "2.5em",
         padding: 15,
+        paddingTop:0,
         borderRadius: 10,
         opacity: ".75",
         textShadow:  "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"

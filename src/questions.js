@@ -217,7 +217,7 @@ export default [
     },
     {
         id: 1901,
-        question: "You used a wrong key. The treasure disappeared into thin air",
+        question: "You used a wrong key. The treasure disappeared into thin air.",
         style: "danger",
         soundFile: "Rolling_spin_1min_25s",
         duration: 85000,

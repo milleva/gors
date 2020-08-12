@@ -30,7 +30,7 @@
 .title {
     font-family: "Eve", Courier, monospace;
     letter-spacing: 1px;
-    word-spacing: 0px;
+    font-size: 2.5em;
     font-weight: normal;
     text-decoration: none;
     font-style: normal;
@@ -38,7 +38,7 @@
     text-transform: none;
     text-align: center;
     position: relative;
-    top: -2em;
+    top: -1em;
     text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
@@ -85,7 +85,7 @@
     font-weight: bold;
     text-align: center;
     position: relative;
-    top: -2em;
+    top: -0.5em;
 
     color: RGB(245, 245, 199);
     background-color: rgba(0,0,0, 0.2);
@@ -123,9 +123,9 @@
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    top: -2em;
+    top: -1em;
 
-    color: gray;
+    color: rgb(239, 152, 3);
     text-shadow: -2px -2px 0 #000,
     2px -2px 0 #000,
     -2px 2px 0 #000,
