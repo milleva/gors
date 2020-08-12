@@ -19,7 +19,7 @@ export default [
         right: 31,
         leftText: "left",
         rightText: "right",
-        leftDuration: 20000,
+        leftDuration: 22000,
         rightDuration: 22000,
         soundFile: "silence",
         leftSoundFile: "Left_20s",
@@ -116,7 +116,7 @@ export default [
         leftText: "jumps and turns",
         rightText: "swing and fly",
         leftDuration: 61000,
-        rightDuration: 60000,
+        rightDuration: 60500,
         soundFile: "silence",
         leftSoundFile: "Jump_and_Turns_1min_1s",
         rightSoundFile: "Swing_and_Fly_1min"
@@ -210,7 +210,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 10\n" +
-        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, lovely afternoon, medallion, ancient treasure",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, lovely afternoon, medallion, ancient treasure",
         left: 1,
         right: 1,
         duration: 1000000
@@ -354,7 +354,7 @@ export default [
         left: 32,
         right: 48,
         leftDuration: 21000,
-        rightDuration: 30000,
+        rightDuration: 31000,
         soundFile: "silence",
         rightSoundFile: "Explore_the_Woods_30s",
         leftSoundFile: "Mountainwalk_21s"
@@ -374,7 +374,7 @@ export default [
     },
     {
         id: 33,
-        duration: 25000, //added 5 sec 11.8.2020
+        duration: 21000,
         question: "You found an ancient treasure but it's locked",
         style: "danger",
         left: 34,
@@ -388,7 +388,7 @@ export default [
         left: 35,
         right: 36,
         leftDuration: 130000,
-        rightDuration: 45000,
+        rightDuration: 50000,
         soundFile: "silence",
         leftSoundFile: "Snakehole_2min_10s",
         rightSoundFile: "Spidernest_45s"
@@ -466,7 +466,7 @@ export default [
         rightText: "tell a story",
         left: 42,
         right: 43,
-        endingEdit: ", relation exploration",
+        endingEdit: "",
         leftDuration: 30000,
         rightDuration: 25000,
         soundFile: "silence",
@@ -543,7 +543,7 @@ export default [
     },
     {
         id: 49,
-        duration: 28000,
+        duration: 25000,
         question: "Before I answer help me with the stone garden. " +
         "Someone has destroyed it.",
         style: "speech-bubble",
