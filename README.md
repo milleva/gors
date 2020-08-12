@@ -5,8 +5,8 @@
 A background-displayed [web app](https://gors.herokuapp.com/) for the interactive play GORS.
 
 Written in React.js. Only frontend. No custom backend system.
-The app uses -.wav song files as background music. These are served from Amazon S3 and fetched by the browser in 
-real time with https. These are CORS-requests (no backend).
+The app uses -.wav sound files as background music songs. The songs are served from Amazon S3 and fetched by the browser in 
+real time with https. The requests are CORS-requests (no backend).
 
 ### App URL
 
