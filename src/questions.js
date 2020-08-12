@@ -354,7 +354,7 @@ export default [
         left: 32,
         right: 48,
         leftDuration: 21000,
-        rightDuration: 31000,
+        rightDuration: 30500,
         soundFile: "silence",
         rightSoundFile: "Explore_the_Woods_30s",
         leftSoundFile: "Mountainwalk_21s"
