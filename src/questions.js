@@ -6,8 +6,8 @@ export default [
         right: 2,
         leftText: "yes",
         rightText: "wohoo",
-        leftDuration: 15000,
-        rightDuration: 15000,
+        leftDuration: 12000,
+        rightDuration: 12000,
         soundFile: "silence",
         leftSoundFile: "Enter_the_World_12s",
         rightSoundFile: "Enter_the_World_12s"
@@ -95,7 +95,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 6\n" +
-        "LOST AND FOUND: \n  route, frog, moment of loading, poison, combo = gloves+fungi",
+        "LOST AND FOUND: \n  route, frog, moment of loading, poison, combo = gloves+fungi, potion",
         left: 1,
         right: 1,
         duration: 1000000
@@ -103,7 +103,7 @@ export default [
     
     {
         id: 8,
-        duration: 20000,
+        duration: 26000,
         question: "You found an ancient treasure but you need a key to open it",
         style: "danger",
         left: 9,
@@ -184,7 +184,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 0\n" +
-        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, freedom",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, lovely afternoon, freedom",
         left: 1,
         right: 1,
         duration: 1000000
@@ -210,7 +210,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 10\n" +
-        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ancient treasure",
+        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, lovely afternoon, medallion, ancient treasure",
         left: 1,
         right: 1,
         duration: 1000000
@@ -228,7 +228,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 10\n" +
-        "LOST AND FOUND: \n  route, lovely afternoon, hyper vision, rolling spin, food, medallion, ghost treasure, balance",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, lovely afternoon, medallion, ghost treasure, balance",
         left: 1,
         right: 1,
         duration: 1000000
@@ -279,7 +279,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 10\n" +
-        "LOST AND FOUND: \n  route, moment of loading, frog, food, spirits, dead end",
+        "LOST AND FOUND: \n  route, frog, moment of loading, food, spirits, dead end",
         left: 1,
         right: 1,
         duration: 1000000
@@ -289,7 +289,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 13\n" +
-        "LOST AND FOUND: \n  route, moment of loading, frog, food, spirits, sorrow",
+        "LOST AND FOUND: \n  route, frog, moment of loading, food, spirits, sorrow",
         left: 1,
         right: 1,
         duration: 1000000
@@ -331,7 +331,7 @@ export default [
         style: "game-over",
         question: "GOOD BYE\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 3\n" +
-        "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, skill of precence",
+        "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, skill of presence",
         left: 1,
         right: 1,
         duration: 1000000
@@ -341,7 +341,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 16\n" +
-        "LOST AND FOUND: \n  route, frog, moment of loading, potion, deadly fungus",
+        "LOST AND FOUND: \n  route, frog, moment of loading, poison, deadly fungus",
         left: 1,
         right: 1,
         duration: 1000000
@@ -349,7 +349,7 @@ export default [
     
     {
         id: 31,
-        leftText: "take a Mountain walk",
+        leftText: "take a mountain walk",
         rightText: "explore the woods",
         left: 32,
         right: 48,
@@ -408,8 +408,8 @@ export default [
         question: "You opened the ancient treasure and " +
         "set free the Mountain Spirit. It's very grateful " +
         "of your actions and gives you one wish.",
-        leftText: "bag of Salt",
-        rightText: "cup of Water",
+        leftText: "bag of salt",
+        rightText: "cup of water",
         left: 37,
         right: 39,
         leftDuration: 3000,
@@ -443,7 +443,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 14\n" +
-        "LOST AND FOUND: \n  route, question of ownership, mountain spirit, spiritual enlightenment",
+        "LOST AND FOUND: \n  route, question of ownership, mountain spirit, internal connection",
         left: 1,
         right: 1,
         duration: 1000000
@@ -478,7 +478,7 @@ export default [
         style: "game-over",
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 6\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, relation exploration, theft, deadly things",
+        "LOST AND FOUND: \n  route, mountain ticket, relation exploration, theft, deadly fungus",
         left: 1,
         right: 1,
         duration: 1000000
@@ -497,7 +497,7 @@ export default [
     },
     {
         id: 44,
-        leftText: "add salt",
+        leftText: "add more salt",
         rightText: "pass the salt",
         left: 46,
         right: 47,
@@ -525,7 +525,7 @@ export default [
         style: "game-over",
         question: "YOU FOUND AN ENDING\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 14\n" +
-        "LOST AND FOUND: \n  route, mountain ticket, relation exploration, memories, ease",
+        "LOST AND FOUND: \n  route, mountain ticket, relation exploration, memories, dreaming",
         left: 1,
         right: 1,
         duration: 1000000
@@ -597,7 +597,7 @@ export default [
     {
         id: 54,
         leftText: "venture the Sandlands",
-        rightText: "bonus Game",
+        rightText: "bonus game",
         left: 55,
         right: 56,
         leftDuration: 90000,
@@ -634,7 +634,7 @@ export default [
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, business, growth, mutual empowerment by " +
-        "lifting one another up for their growth through noticing their qualities and skills while also doing something meaningful together, " +
+        "lifting one another up for their growth through noticing their qualities and skills while also doing something amazing together, " +
         "unforgettable dance",
         left: 1,
         right: 1,
@@ -688,7 +688,7 @@ export default [
         question: "GAME OVER\n\n" +
         "YOUR SCORE\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, business, growth, mutual empowerement by " +
-        "lifting one another up for their growth through noticing their qualities and skills while also doing something meaningful together",
+        "lifting one another up for their growth through noticing their qualities and skills while also doing something meaningful together, dreaming",
         left: 1,
         right: 1,
         duration: 1000000
