@@ -489,7 +489,7 @@ export default [
         rightText: "pass the salt",
         left: 44,
         right: 47,
-        leftDuration: 48000,
+        leftDuration: 48500,
         rightDuration: 40000,
         soundFile: "silence",
         leftSoundFile: "Add_Salt_eka_48s",
