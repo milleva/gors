@@ -7,7 +7,7 @@ import Sound from "react-sound"
 
 import './App.css';
 
-const dev = true
+const dev = false
 
 const DEFAULT_PAUSE_MILLISECONDS = 5000
 const INITIAL_GAME_START_PREVENTION_DURATION = 10000
@@ -22,7 +22,7 @@ const capitalizeFirstLetter = (str) => {
 
 const initialAppState = {
     gameStarted: false,
-    currentQuestionId: 57,
+    currentQuestionId: 1,
     isAutoLeftTimerRunning: false,
     isQuestionExpanding: false,
     currentQuestionCharacterIndex: 1,
