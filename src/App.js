@@ -22,7 +22,7 @@ const capitalizeFirstLetter = (str) => {
 
 const initialAppState = {
     gameStarted: false,
-    currentQuestionId: 33,
+    currentQuestionId: 57,
     isAutoLeftTimerRunning: false,
     isQuestionExpanding: false,
     currentQuestionCharacterIndex: 1,
