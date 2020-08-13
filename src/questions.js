@@ -601,7 +601,7 @@ export default [
         left: 55,
         right: 56,
         leftDuration: 90000,
-        rightDuration: 31000,
+        rightDuration: 33000,
         soundFile: "silence",
         rightSoundFile: "Bonus_Game31",
         leftSoundFile: "VTS_after_level_up_(1min30s)"
