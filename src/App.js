@@ -7,7 +7,7 @@ import Sound from "react-sound"
 
 import './App.css';
 
-const dev = false
+const dev = true
 
 const DEFAULT_PAUSE_MILLISECONDS = 5000
 const INITIAL_GAME_START_PREVENTION_DURATION = 10000
@@ -22,7 +22,7 @@ const capitalizeFirstLetter = (str) => {
 
 const initialAppState = {
     gameStarted: false,
-    currentQuestionId: 1,
+    currentQuestionId: 33,
     isAutoLeftTimerRunning: false,
     isQuestionExpanding: false,
     currentQuestionCharacterIndex: 1,
@@ -183,7 +183,7 @@ class App extends Component {
                                 <div className="app-content">
                                     {question.question &&
                                     <span>
-                                            {question.style === "danger" && <img style={{position: "absolute", left: "13.5em", top: "2em", width: 950}} src={dangerBubble} alt=""/>}
+                                            {question.style === "danger" && <img style={{position: "absolute", left: "21vw", top: "9vw", width: "55vw"}} src={dangerBubble} alt=""/>}
                                         <h1 className={question.style || "title"}>
                                                 {displayedMainText.substring(0, this.state.currentQuestionCharacterIndex)}
                                             </h1>
