@@ -93,7 +93,7 @@ export default [
     {
         id: 7,
         style: "game-over",
-        question: "YOU FOUND AN ENDING\n\n" +
+        question: "YOU FOUND AN ENDING\n" +
         "your score\n\n BLIDS:\n 6\n" +
         "LOST AND FOUND: \n  route, frog, moment of loading, poison, combo = gloves+fungi, potion",
         left: 1,
@@ -136,7 +136,7 @@ export default [
     {
         id: 11,
         style: "game-over",
-        question: "YOU FOUND AN ENDING\n\n" +
+        question: "YOU FOUND AN ENDING\n" +
         "your score\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, separation",
         left: 1,
@@ -182,7 +182,7 @@ export default [
     {
         id: 15,
         style: "game-over",
-        question: "YOU FOUND AN ENDING\n\n" +
+        question: "YOU FOUND AN ENDING\n" +
         "your score\n\n BLIDS:\n 0\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, food, lovely afternoon, freedom",
         left: 1,
@@ -309,7 +309,7 @@ export default [
     {
         id: 27,
         style: "game-over",
-        question: "YOU FOUND AN ENDING\n\n" +
+        question: "YOU FOUND AN ENDING\n" +
         "your score\n\n BLIDS:\n 3\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, sweat and salt",
         left: 1,
@@ -329,7 +329,7 @@ export default [
     {
         id: 29,
         style: "game-over",
-        question: "GOOD BYE\n\n" +
+        question: "GOOD BYE\n" +
         "your score\n\n BLIDS:\n 3\n" +
         "LOST AND FOUND: \n  route, hyper vision, rolling spin, body care, trust, skill of presence",
         left: 1,
@@ -396,7 +396,7 @@ export default [
     {
         id: 35,
         style: "game-over",
-        question: "YOU FOUND AN ENDING\n\n" +
+        question: "YOU FOUND AN ENDING\n" +
         "your score\n\n BLIDS:\n 12\n" +
         "LOST AND FOUND: \n  route, question of ownership, fear, balance ",
         left: 1,
@@ -431,7 +431,7 @@ export default [
     {
         id: 38,
         style: "game-over",
-        question: "GAME OCEAN\n\n" +
+        question: "GAME OCEAN\n" +
         "your score\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, question of ownership, mountain spirit, discontent, water",
         left: 1,
@@ -441,7 +441,7 @@ export default [
     {
         id: 39,
         style: "game-over",
-        question: "YOU FOUND AN ENDING\n\n" +
+        question: "YOU FOUND AN ENDING\n" +
         "your score\n\n BLIDS:\n 14\n" +
         "LOST AND FOUND: \n  route, question of ownership, mountain spirit, internal connection",
         left: 1,
@@ -523,7 +523,7 @@ export default [
     {
         id: 47,
         style: "game-over",
-        question: "YOU FOUND AN ENDING\n\n" +
+        question: "YOU FOUND AN ENDING\n" +
         "your score\n\n BLIDS:\n 14\n" +
         "LOST AND FOUND: \n  route, mountain ticket, relation exploration, memories, dreaming",
         left: 1,
@@ -609,7 +609,7 @@ export default [
     {
         id: 55,
         style: "game-over",
-        question: "YOU FOUND AN ENDING\n\n" +
+        question: "YOU FOUND AN ENDING\n" +
         "your score\n\n BLIDS:\n 9\n" +
         "LOST AND FOUND: \n  route, business, growth, unforgettable dance",
         left: 1,
@@ -675,7 +675,7 @@ export default [
     {
         id: 61,
         style: "game-over",
-        question: "TIMES UP\n\n" +
+        question: "TIMES UP\n" +
         "your score\n\n BLIDS:\n 6\n" +
         "LOST AND FOUND: \n route, frog, knowledge, shape of time",
         left: 1,
