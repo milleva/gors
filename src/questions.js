@@ -367,7 +367,7 @@ export default [
         left: 40,
         right: 33,
         leftDuration: 35000,
-        rightDuration: 15000,
+        rightDuration: 16000,
         soundFile: "silence",
         leftSoundFile: "Pay_The_Fee_35s",
         rightSoundFile: "Tell_them_they_cant_own_the_mountain_15s"
