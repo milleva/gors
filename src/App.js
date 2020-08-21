@@ -79,7 +79,11 @@ class App extends Component {
                     this.answerQuestion("right")
                     console.log("right");
                     break;
-                case 89://89 = 'y'
+                case 89://89 = 'y', 53 = '5'
+                    this.answerQuestion("left")
+                    console.log("left")
+                    break
+                case 53://89 = 'y', 53 = '5'
                     this.answerQuestion("left")
                     console.log("left")
                     break
